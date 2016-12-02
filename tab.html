@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/sprite.css"/>
+
+</head>
+<body>
+
+
+<div class="box">
+    <div class="index-href"><a href="#" onclick="alert('回到首页');">首页</a></div>
+    <ul>
+        <li>客户1<sup>X</sup></li>
+        <li>客户2<sup>X</sup></li>
+    </ul>
+    <div class="tab-page">
+        11
+        <div style="background-color:grey;">这是一个内嵌Div</div>
+        <ul>
+            <li>test1</li>
+            <li>test2</li>
+        </ul>
+    </div>
+    <div class="tab-page">内容二</div>
+</div>
+
+<script src="js/global.js"></script>
+<script src="js/utils.js"></script>
+<script type="text/javascript">
+    var boxList = utils.getElementsByClass("box");
+    var box1 = new Tab(boxList[0], 0);
+</script>
+</body>
+</html>

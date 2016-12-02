@@ -1,0 +1,356 @@
+/* 组件：列表上方搜索
+========================================================================================= */
+.search-nav {height:60px; margin-top:14px; border-bottom: solid 1px #e9edf2; text-align: left; color: #8c949b}
+.search-nav i{font-size: 15px}
+.search-nav .name{border: none; height: 36px; line-height: 36px;border-radius: 6px; padding-left: 6px; padding-right: 6px; background: #f7f7f7}
+.search-nav span{display: block; margin-left: 6px; margin-right: 6px; display: inline-block }
+
+
+/* 组件：列表上方icons
+========================================================================================= */
+.icon-nav {height:42px; border-bottom:solid 1px #e9edf2;}
+.icon-nav ul li{padding-bottom: 0; margin-top:8px;}
+.icon-nav .btn {display:block; float:left;padding-left: 10px; padding-right: 10px;}
+.icon-nav .rt{width:126px;float: right}
+
+/* 组件：模态框
+========================================================================================= */
+/*锁屏背景*/
+.black_overlay {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 0;
+    -moz-opacity: 0.3;
+    opacity: .30;
+    filter: alpha(opacity=30);
+}
+
+.enlarge{width: 20px; height: 20px; margin-top:10px; float: right; }
+.shrink{width: 20px; height: 20px; margin-top:10px; float: right;}
+
+
+@-webkit-keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.rodal-flip-enter {
+    -webkit-animation: rodal-flip-enter both ease-in;
+    animation: rodal-flip-enter both ease-in;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+.change{
+    background-color: #a295f4;
+    border-radius: 0px 5px 0px 0px;
+    text-align: right;
+    cursor: default;
+    height: 40px;
+    padding: 0 20px;
+}
+.change .tit{
+    line-height: 40px;
+    width: 100px;
+    text-align: left;
+    color: #ffffff;
+    float: left;
+}
+
+
+.white_content {
+    display: none;
+    position: absolute;
+    z-index: 1002;
+    overflow: auto;
+}
+.mod-cent{
+    height: 360px;
+    background-color:#fff;
+    border-radius: 0px 0px 6px 6px;
+}
+.fullscreen{
+    top:0%;
+    left:0%;
+    width:100%;
+    height:100%;
+    background: #fff;
+    display: block;
+}
+
+
+/*.normal-1{
+
+    width: 900px;
+    height: 400px;
+    display: block;
+    position:relative;
+
+    margin-left:-450px;margin-top:-200px;
+    position:fixed;left:50%;rigth:50%;top:50%;bottom:50%;
+}*/
+.normal-1{
+    width: 900px; height:400px; margin-top:-200px; margin-left: -450px; animation-duration: 300ms;
+    display: block;
+    position:fixed;left:50%;rigth:50%;top:50%;bottom:50%;
+}
+/*.normal-1{width: 400px; height: 240px; margin-top: -120px; margin-left: -200px; animation-duration: 300ms;}*/
+
+.normal-2{
+    width: 600px; height:400px; margin-top:-200px; margin-left: -300px; animation-duration: 300ms;
+    display: block;
+    position:fixed;left:50%;rigth:50%;top:50%;bottom:50%;
+}
+
+.foot{
+    margin-top: 50px;
+    font-size:15px; text-align: center;
+}
+.foot a{
+    margin: 0 10px;
+}
+
+.enlarge{width: 20px; height: 20px; margin-top:8px; float: right; font-size: 18px; color: #fff}
+.shrink{width: 20px; height: 20px; margin-top:8px; float: right; font-size: 18px; color: #fff}
+
+
+@-webkit-keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes rodal-flip-enter {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 60deg);
+    }
+    70% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -15deg);
+    }
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.rodal-flip-enter {
+    animation-duration: 300ms;border-radius:6px
+    -webkit-animation: rodal-flip-enter both ease-in;
+    animation: rodal-flip-enter both ease-in;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+}
+
+/* 组件：选项卡带关闭
+========================================================================================= */
+.box{width: 98%; margin: 10px auto;}
+.box>ul{
+    position: relative;
+    top: 1px;
+    margin-left:110px;
+    padding-left: 20px;
+    /*overflow: hidden;/!*清除子元素的浮动对父级元素的影响*!/*/
+}
+.insw{
+    float: left;
+    margin-right: 10px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    text-align: center;
+    background: #d5dce5;
+    border: 1px solid #d5dce5;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+}
+
+.index-href{
+    float: left;
+    margin-right: 10px;
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    text-align: center;
+    background: #d5dce5;
+    border: 1px solid #d5dce5;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+}
+
+.box>ul li{
+    float: left;
+    margin-right: 10px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    text-align: center;
+    background: #d5dce5;
+    border: 1px solid #d5dce5;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+}
+.box>ul li.select{
+    background: #fff;
+    color: #4125e8;
+    border-bottom-color:#fff;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+.box .tab-page.select {
+    display: block;
+}
+
+
+.box>ul sup{
+    top:8px; font-size: 8px; float: right;  right: 6px; font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+}
+.box .tab-page{
+    display: none;
+    height: 600px;
+    background:#fff;
+    padding: 0 20px;
+    text-align: center;
+    border: 1px solid #d9dfe9;
+    border-radius: 5px;
+    clear: both;/*清除哥哥元素的浮动对弟弟的影响*/
+}
+
+
+
+
+.open-nav {
+    width: 24px
+}
+
+.controls a.open-nav .nav-icon {
+    margin-top: 35px;
+    background: #000;
+    height: 2px!important;
+    width: 24px;
+    position: absolute;
+    transform: translateY(-50%)
+}
+
+.controls a.open-nav .nav-icon::after,.controls a.open-nav .nav-icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease
+}
+
+.controls a.close-nav .nav-icon::before,.controls a.open-nav .nav-icon::before {
+    -moz-transform: translateY(-6px);
+    -o-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px)
+}
+
+.controls a.close-nav .nav-icon::after,.controls a.open-nav .nav-icon::after {
+    -moz-transform: translateY(6px);
+    -o-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px)
+}
+
+.controls a.close-nav .nav-icon {
+    visibility: hidden
+}
+
+.controls a.close-nav .nav-icon::before {
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    visibility: visible
+}
+
+.controls a.close-nav .nav-icon::after {
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    visibility: visible
+}
+
+.controls a.open-nav:hover .nav-icon::before {
+    -moz-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px)
+}
+
+.controls a.open-nav:hover .nav-icon::after {
+    -moz-transform: translateY(8px);
+    -o-transform: translateY(8px);
+    -ms-transform: translateY(8px);
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px)
+}
+
+.controls a.close-nav:hover,.controls a.open-nav:hover {
+    opacity: 1!important
+}

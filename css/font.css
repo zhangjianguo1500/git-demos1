@@ -1,0 +1,500 @@
+@font-face {
+  font-family: 'fooding';
+  src:  url('../fonts/fooding.eot?1hi6zl');
+  src:  url('../fonts/fooding.eot?1hi6zl#iefix') format('embedded-opentype'),
+    url('../fonts/fooding.ttf?1hi6zl') format('truetype'),
+    url('../fonts/fooding.woff?1hi6zl') format('woff'),
+    url('../fonts/fooding.svg?1hi6zl#fooding') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fooding' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fi-list:before {
+  content: "\e97f";
+}
+.fi-calendar:before {
+  content: "\e983";
+}
+.fi-offer:before {
+  content: "\e936";
+}
+.fi-edit-line:before {
+  content: "\e93c";
+}
+.fi-purch-inquiry:before {
+  content: "\e93d";
+}
+.fi-purch-order:before {
+  content: "\e93f";
+}
+.fi-view:before {
+  content: "\e940";
+}
+.fi-inspection-fee:before {
+  content: "\e941";
+}
+.fi-entrust:before {
+  content: "\e947";
+}
+.fi-print:before {
+  content: "\e949";
+}
+.fi-export:before {
+  content: "\e950";
+}
+.fi-booking:before {
+  content: "\e955";
+}
+.fi-lose-order:before {
+  content: "\e95c";
+}
+.fi-back:before {
+  content: "\e95e";
+}
+.fi-zoom-in:before {
+  content: "\e962";
+}
+.fi-fee-apply:before {
+  content: "\e966";
+}
+.fi-pay-1:before {
+  content: "\e967";
+}
+.fi-pay-record:before {
+  content: "\e968";
+}
+.fi-pay-2:before {
+  content: "\e969";
+}
+.fi-copy:before {
+  content: "\e96a";
+}
+.fi-inquiry:before {
+  content: "\e96b";
+}
+.fi-anchor:before {
+  content: "\e96c";
+}
+.fi-ellipsis:before {
+  content: "\e96d";
+}
+.fi-close-sm:before {
+  content: "\e96e";
+}
+.fi-calc:before {
+  content: "\e96f";
+}
+.fi-calc-packing:before {
+  content: "\e970";
+}
+.fi-check:before {
+  content: "\e971";
+}
+.fi-stage:before {
+  content: "\e972";
+}
+.fi-assessment:before {
+  content: "\e973";
+}
+.fi-storage:before {
+  content: "\e974";
+}
+.fi-delete-plan:before {
+  content: "\e975";
+}
+.fi-gene-order:before {
+  content: "\e976";
+}
+.fi-zoom-out:before {
+  content: "\e965";
+}
+.fi-new-plan:before {
+  content: "\e977";
+}
+.fi-add:before {
+  content: "\e978";
+}
+.fi-new-sample:before {
+  content: "\e95d";
+}
+.fi-invoice:before {
+  content: "\e979";
+}
+.fi-certificate:before {
+  content: "\e97a";
+}
+.fi-to-void:before {
+  content: "\e97b";
+}
+.fi-form:before {
+  content: "\e935";
+}
+.fi-refresh:before {
+  content: "\e916";
+}
+.fi-flow-chart:before {
+  content: "\e906";
+}
+.fi-to-paid-1:before {
+  content: "\e90e";
+}
+.fi-sort:before {
+  content: "\e904";
+}
+.fi-asc:before {
+  content: "\e902";
+}
+.fi-desc:before {
+  content: "\e903";
+}
+.fi-to-pay:before {
+  content: "\e951";
+}
+.fi-rename:before {
+  content: "\e944";
+}
+.fi-assign-logistics:before {
+  content: "\e90b";
+}
+.fi-move-to:before {
+  content: "\e960";
+}
+.fi-modify:before {
+  content: "\e95f";
+}
+.fi-order:before {
+  content: "\e92d";
+}
+.fi-oa-back:before {
+  content: "\e95b";
+}
+.fi-vote:before {
+  content: "\e963";
+}
+.fi-search:before {
+  content: "\e959";
+}
+.fi-complete:before {
+  content: "\e958";
+}
+.fi-receipt:before {
+  content: "\e90c";
+}
+.fi-oa-pick:before {
+  content: "\e957";
+}
+.fi-apply:before {
+  content: "\e956";
+}
+.fi-delete:before {
+  content: "\e954";
+}
+.fi-reset:before {
+  content: "\e953";
+}
+.fi-cust-repeat:before {
+  content: "\e945";
+}
+.fi-cust-merge:before {
+  content: "\e952";
+}
+.fi-activity:before {
+  content: "\e94f";
+}
+.fi-order-merge:before {
+  content: "\e94e";
+}
+.fi-pay-apply:before {
+  content: "\e95a";
+}
+.fi-payment:before {
+  content: "\e94a";
+}
+.fi-assign-cust:before {
+  content: "\e94b";
+}
+.fi-to-paid-2:before {
+  content: "\e964";
+}
+.fi-pro-classify:before {
+  content: "\e948";
+}
+.fi-split-order:before {
+  content: "\e946";
+}
+.fi-approval:before {
+  content: "\e961";
+}
+.fi-oa-task:before {
+  content: "\e943";
+}
+.fi-close:before {
+  content: "\e933";
+}
+.fi-close-lg:before {
+  content: "\e90a";
+}
+.fi-save:before {
+  content: "\e94d";
+}
+.fi-product:before {
+  content: "\e94c";
+}
+.fi-cust-assign:before {
+  content: "\e92e";
+}
+.fi-auto-price:before {
+  content: "\e92c";
+}
+.fi-word:before {
+  content: "\e90d";
+}
+.fi-m-write:before {
+  content: "\e90f";
+}
+.fi-m-receive:before {
+  content: "\e910";
+}
+.fi-inbox:before {
+  content: "\e911";
+}
+.fi-been-sent:before {
+  content: "\e912";
+}
+.fi-remove:before {
+  content: "\e913";
+}
+.fi-audit-box:before {
+  content: "\e914";
+}
+.fi-dustbin:before {
+  content: "\e915";
+}
+.fi-drafts:before {
+  content: "\e917";
+}
+.fi-folder:before {
+  content: "\e918";
+}
+.fi-share:before {
+  content: "\e919";
+}
+.fi-mark:before {
+  content: "\e91a";
+}
+.fi-m-move:before {
+  content: "\e91b";
+}
+.fi-m-assign:before {
+  content: "\e91c";
+}
+.fi-color .path1:before {
+  content: "\e91d";
+  color: rgb(232, 168, 42);
+}
+.fi-color .path2:before {
+  content: "\e939";
+  margin-left: -1em;
+  color: rgb(191, 38, 38);
+}
+.fi-color .path3:before {
+  content: "\e93a";
+  margin-left: -1em;
+  color: rgb(41, 183, 47);
+}
+.fi-color .path4:before {
+  content: "\e93b";
+  margin-left: -1em;
+  color: rgb(27, 134, 206);
+}
+.fi-not-follow:before {
+  content: "\e91f";
+}
+.fi-follow:before {
+  content: "\e920";
+}
+.fi-unread:before {
+  content: "\e921";
+}
+.fi-read:before {
+  content: "\e922";
+}
+.fi-link-1:before {
+  content: "\e923";
+}
+.fi-link-2:before {
+  content: "\e924";
+}
+.fi-settings:before {
+  content: "\e925";
+}
+.fi-m-reply:before {
+  content: "\e926";
+}
+.fi-reply-all:before {
+  content: "\e927";
+}
+.fi-m-forward:before {
+  content: "\e929";
+}
+.fi-m-default:before {
+  content: "\e92a";
+}
+.fi-connect:before {
+  content: "\e92b";
+}
+.fi-top:before {
+  content: "\e92f";
+}
+.fi-profile:before {
+  content: "\e905";
+}
+.fi-post:before {
+  content: "\e91e";
+}
+.fi-password:before {
+  content: "\e937";
+}
+.fi-logout:before {
+  content: "\e938";
+}
+.fi-comment:before {
+  content: "\e908";
+}
+.fi-upload:before {
+  content: "\f942";
+}
+.fi-download:before {
+  content: "\f943";
+}
+.fi-assign:before {
+  content: "\f936";
+}
+.fi-pending:before {
+  content: "\f935";
+}
+.fi-remind:before {
+  content: "\f929";
+}
+.fi-home:before {
+  content: "\f925";
+}
+.fi-edit:before {
+  content: "\f909";
+}
+.fi-picker:before {
+  content: "\e931";
+}
+.fi-warning:before {
+  content: "\f904";
+}
+.fi-angle-up-sm:before {
+  content: "\f106";
+}
+.fi-angle-down-sm:before {
+  content: "\f107";
+}
+.fi-angle-left-sm:before {
+  content: "\f108";
+}
+.fi-angle-right-sm:before {
+  content: "\f109";
+}
+.fi-block:before {
+  content: "\f04d";
+}
+.fi-uncheck:before {
+  content: "\f927";
+}
+.fi-earth:before {
+  content: "\f905";
+}
+.fi-start:before {
+  content: "\f903";
+}
+.fi-collapse:before {
+  content: "\e056";
+}
+.fi-expand:before {
+  content: "\e055";
+}
+.fi-tree-leaf:before {
+  content: "\e012";
+}
+.fi-tree-collapse:before {
+  content: "\f921";
+}
+.fi-tree-expand:before {
+  content: "\f922";
+}
+.fi-minus:before {
+  content: "\f924";
+}
+.fi-radio-checked:before {
+  content: "\e900";
+}
+.fi-radio-unchecked:before {
+  content: "\e901";
+}
+.fi-_:before {
+  content: "\e980";
+}
+.fi-more:before {
+  content: "\e97e";
+}
+.fi-message:before {
+  content: "\e93e";
+}
+.fi-user:before {
+  content: "\e97d";
+}
+.fi-mail:before {
+  content: "\e97c";
+}
+.fi-engagements:before {
+  content: "\e942";
+}
+.fi-logs:before {
+  content: "\e907";
+}
+.fi-contact:before {
+  content: "\e928";
+}
+.fi-angle-left:before {
+  content: "\e930";
+}
+.fi-angle-up:before {
+  content: "\e909";
+}
+.fi-angle-right:before {
+  content: "\e934";
+}
+.fi-angle-down:before {
+  content: "\e932";
+}
+

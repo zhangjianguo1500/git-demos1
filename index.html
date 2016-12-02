@@ -1,1 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/font.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
 
+</head>
+<body>
+<!--site-header Start-->
+<div class="site-header">
+    <a class="logo"><img src="images/logo.png" alt=""/></a>
+    <div class="nav"><a href="">系统管理</a><a onClick="Effect('test1');" id="test1tab">OA系统</a><a onClick="Effect('test2');" id="test2tab">基础数据</a><a onClick="Effect('test3');" id="test3tab">业务管理</a></div>
+    <div class="header-searchBox"><i class="fi-search fi-search2"></i><input class="searchIput outline" type="text"/></div>
+    <div class="user-link">
+        <ul>
+            <li><a href=""><i class="fi-more" id="btn"></i></a></li>
+            <li><a href=""><i class="fi-remind"></i> </a><sub style="color: #fff">6</sub></li>
+            <li><a href=""><i class="fi-mail"></i> </a><sub>10</sub></li>
+            <li><a href=""><i class="fi-user"></i> </a></li>
+        </ul>
+    </div>
+</div>
+
+<!--site-header End-->
+
+<div id="test1" class="header-menu" style="display:none;">
+    <div class="header-menu1">
+        <div class="arrow-up1"></div>
+        <div class="menu_box">
+            <div class="mlist1">
+                <li>
+                    <span>日常工作</span>
+                    <a href="">日常工作</a>
+                </li>
+                <li>
+                    <span>报销管理</span>
+                    <a href="">报销单</a>
+                </li>
+            </div>
+            <div class="mlist1">
+                <li>
+                    <span>任务管理</span>
+                    <a href="">任务</a>
+                </li>
+                <li>
+                    <span>考勤</span>
+                    <a href="">考勤登记</a>
+                    <a href="">请假单</a>
+                </li>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="test2" class="header-menu" style="display:none;">
+    <div class="header-menu2">
+        <div class="arrow-up2"></div>
+        <div class="menu_box">
+            <div class="mlist1">
+                <li>
+                    <span>日常工作</span>
+                    <a href="">日常工作2</a>
+                </li>
+                <li>
+                    <span>报销管理</span>
+                    <a href="">报销单</a>
+                </li>
+            </div>
+            <div class="mlist1">
+                <li>
+                    <span>任务管理</span>
+                    <a href="">任务</a>
+                </li>
+                <li>
+                    <span>考勤</span>
+                    <a href="">考勤登记</a>
+                    <a href="">请假单</a>
+                </li>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="test3" class="header-menu" style="display:none;">
+    <div class="header-menu3">
+        <div class="arrow-up3"></div>
+        <div class="menu_box">
+            <div class="mlist1">
+                <li>
+                    <span>日常工作3</span>
+                    <a href="">日常工作</a>
+                </li>
+                <li>
+                    <span>报销管理</span>
+                    <a href="">报销单</a>
+                </li>
+            </div>
+            <div class="mlist1">
+                <li>
+                    <span>任务管理</span>
+                    <a href="">任务</a>
+                </li>
+                <li>
+                    <span>考勤</span>
+                    <a href="">考勤登记</a>
+                    <a href="">请假单</a>
+                </li>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--tab Start-->
+<div class="box">
+    <div class="index-href"><a href="#" onclick="alert('回到首页');">首页</a></div>
+    <ul>
+        <li>客户1<sup>X</sup></li>
+        <li>客户2<sup>X</sup></li>
+    </ul>
+    <div class="tab-page">
+        <!--search-nav Start-->
+        <div class="search-nav">
+            <label>客户名称</label>
+            <input class="name" type="text"/>
+            <label>国家</label>
+            <input class="name" type="text"/>
+            <label>邮箱</label>
+            <input class="name" type="text"/>
+            <label>关注产品</label>
+            <input class="name" type="text"/>
+            <a href="" title="查询"><span><i class="fi-search"></i></span></a>
+            <a href="" title="清除"> <span><i class="fi-reset"></i></span></a>
+            <a href="" title="清除"><span><i class="fi-expand"></i></span></a>
+        </div>
+        <!--search-nav End-->
+        <!--列表上方操作区域 Start-->
+        <div class="icon-nav">
+            <ul class="hh-avg-sm-2 hh-thumbnails">
+                <li>
+                    <a class="btn" href="javascript:;" onclick="return Modal.show('MyDiv','normal-1');" title="添加">
+                        <i class="fi-add"></i>
+                    </a>
+                    <a class="btn" href="javascript:;"  title="未知">
+                        <i class="fi-delete"></i>
+                    </a>
+                    <a class="btn" href="javascript:;"  title="未知">
+                        <i class="fi-cust-assign"></i>
+                    </a>
+                    <a class="btn" href="javascript:;"  title="未知">
+                        <i class="fi-cust-merge"></i>
+                    </a>
+                    <a class="btn" href="javascript:;"  title="未知">
+                        <i class="fi-cust-repeat"></i>
+                    </a>
+                    <a class="btn" href="javascript:;"  title="未知">
+                        <i class="fi-offer"></i>
+                    </a>
+                </li>
+                <li>
+                    <div class="rt">
+                        <a class="btn" href="javascript:;" title="颜色分类">
+                            <i class="fi-color">
+                                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                            </i>
+                        </a>
+                        <a class="btn" href="javascript:;"  title="收藏">
+                            <i class="fi-not-follow"></i>
+                        </a>
+                        <a class="btn" href="javascript:;"  title="删除">
+                            <i class="fi-remind"></i>
+                        </a>
+                    </div>
+
+
+                </li>
+            </ul>
+
+        </div>
+        <!--列表上方操作区域 End-->
+        <!--table Start-->
+        <table class="hh-table hh-table-hover">
+            <thead>
+            <tr>
+                <th><i class="fi-m-default"></i></th>
+                <th><i class="fi-picker"></i></th>
+                <th><i class="fi-not-follow"></i></th>
+                <th>客户名称</th>
+                <th>所属国家</th>
+                <th>客户等级</th>
+                <th>客户来源</th>
+                <th>网站</th>
+                <th>主要联系人</th>
+                <th>创建时间</th>
+                <th>分管人</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><i class="select-checkbox"></i></td>
+                <td><i class="fi-picker" style="color:#333"></i></td>
+                <td><i class="fi-not-follow" style="color:#333"></i></td>
+                <td>Food Processing Innovations Center LLC</td>
+                <td>德国</td>
+                <td>二级</td>
+                <td>网络</td>
+                <td>http://www.zhaodeng.com</td>
+                <td>余丹</td>
+                <td>2016-11-20</td>
+                <td>于洋洋</td>
+            </tr>
+            <tr>
+                <td><i class="select-checkbox"></i></td>
+                <td><i class="fi-picker" style="color:#333"></i></td>
+                <td><i class="fi-not-follow" style="color:#333"></i></td>
+                <td>Food Processing Innovations Center LLC</td>
+                <td>德国</td>
+                <td>二级</td>
+                <td>网络</td>
+                <td>http://www.zhaodeng.com</td>
+                <td>余丹</td>
+                <td>2016-11-20</td>
+                <td>于洋洋</td>
+            </tr>
+            </tbody>
+        </table>
+        <!--table End-->
+
+        <!--弹出层时背景层DIV-->
+        <div id="fade" class="black_overlay"></div>
+        <div id="MyDiv" class="white_content rodal-flip-enter"  style="animation-duration: 300ms;border-radius: 5px">
+            <div class="change" >
+                <div class="tit">新增</div>
+                <span id="enlarge" class="enlarge" style="  display : block ;" onclick="return Modal.fullscreen('MyDiv','normal-1');"><i class="fi-zoom-in"></i></span>
+                <span id="narrow"  class="shrink" style="  display : none ; " onclick="return Modal.show('MyDiv','normal-1');" ><i class="fi-zoom-out"></i></span>
+            </div>
+            <div class="mod-cent">
+                目前来说，我还是喜欢这个自己改造的弹出层。自己在项目中也用的是这个。<br/>
+
+                <div class="foot">
+                    <a class="hh-btn hh-btn-secondary hh-radius" onclick="return Modal.close('MyDiv');">关闭并保存</a>
+                    <a class="hh-btn hh-btn-default hh-radius" onclick="return Modal.close('MyDiv');">取消</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="tab-page">内容二</div>
+</div>
+
+<!--tab End-->
+<script src="js/global.js"></script>
+<script src="js/utils.js"></script>
+<script type="text/javascript">
+    var boxList = utils.getElementsByClass("box");
+    var box1 = new Tab(boxList[0], 0);
+</script>
+
+</body>
+</html>
