@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="css/global.css"/>
-    <link rel="stylesheet" href="css/font.css"/>
+    <link rel="stylesheet" href="css/font2.css"/>
     <link rel="stylesheet" href="css/index.css"/>
 
 </head>
@@ -12,247 +12,243 @@
 <!--site-header Start-->
 <div class="site-header">
     <a class="logo"><img src="images/logo.png" alt=""/></a>
-    <div class="nav"><a href="">系统管理</a><a onClick="Effect('test1');" id="test1tab">OA系统</a><a onClick="Effect('test2');" id="test2tab">基础数据</a><a onClick="Effect('test3');" id="test3tab">业务管理</a></div>
-    <div class="header-searchBox"><i class="fi-search fi-search2"></i><input class="searchIput outline" type="text"/></div>
+    <div class="header-searchBox"><i class="ic-i-search fi-search2"></i><input class="searchIput outline" type="text"/></div>
     <div class="user-link">
         <ul>
-            <li><a href=""><i class="fi-more" id="btn"></i></a></li>
-            <li><a href=""><i class="fi-remind"></i> </a><sub style="color: #fff">6</sub></li>
-            <li><a href=""><i class="fi-mail"></i> </a><sub>10</sub></li>
-            <li><a href=""><i class="fi-user"></i> </a></li>
+            <li><a href=""><i class="ic-i-menu"></i></a></li>
+            <!--关闭
+            <li><a href=""><i class="fi-remove"></i></a></li>
+            -->
+            <li><a href=""><i class="ic-i-search"></i></a>
+                <!--菜单2 Start-->
+                <div class="menu2" style="display: none">22</div>
+                <!--菜单2 End-->
+            </li>
+            <li><a href=""><i class="ic-i-add"></i></a>
+                <!--菜单2 Start-->
+                <div class="menu2" style="display: none">22</div>
+                <!--菜单2 End-->
+            </li>
+            <li><a href=""><i class="ic-i-message"></i> </a><sub style="color: #fff">6</sub>
+                <!--菜单3 Start-->
+                <div class="menu2" style="display: none">33</div>
+                <!--菜单3 End-->
+            </li>
+            <li><a href=""><i class="ic-i-email"></i> </a><sub>10</sub>
+                <!--菜单4 Start-->
+                <div class="menu2"  style="display: none">44</div>
+                <!--菜单4 End-->
+            </li>
+            <li><a href=""><i class="ic-i-user"></i> </a>
+                <!--菜单5 Start-->
+                <div class="menu2" style="display: none">55</div>
+                <!--菜单5 End-->
+            </li>
+            <li><a href=""><i class="ic-i-help"></i> </a></li>
         </ul>
     </div>
 </div>
-
+<!--菜单1 Start-->
+<div class="menu1" style="display: none">111</div>
+<!--菜单1 End-->
 <!--site-header End-->
 
-<div id="test1" class="header-menu" style="display:none;">
-    <div class="header-menu1">
-        <div class="arrow-up1"></div>
-        <div class="menu_box">
-            <div class="mlist1">
-                <li>
-                    <span>日常工作</span>
-                    <a href="">日常工作</a>
-                </li>
-                <li>
-                    <span>报销管理</span>
-                    <a href="">报销单</a>
-                </li>
-            </div>
-            <div class="mlist1">
-                <li>
-                    <span>任务管理</span>
-                    <a href="">任务</a>
-                </li>
-                <li>
-                    <span>考勤</span>
-                    <a href="">考勤登记</a>
-                    <a href="">请假单</a>
-                </li>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<div id="test2" class="header-menu" style="display:none;">
-    <div class="header-menu2">
-        <div class="arrow-up2"></div>
-        <div class="menu_box">
-            <div class="mlist1">
-                <li>
-                    <span>日常工作</span>
-                    <a href="">日常工作2</a>
-                </li>
-                <li>
-                    <span>报销管理</span>
-                    <a href="">报销单</a>
-                </li>
-            </div>
-            <div class="mlist1">
-                <li>
-                    <span>任务管理</span>
-                    <a href="">任务</a>
-                </li>
-                <li>
-                    <span>考勤</span>
-                    <a href="">考勤登记</a>
-                    <a href="">请假单</a>
-                </li>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<div id="test3" class="header-menu" style="display:none;">
-    <div class="header-menu3">
-        <div class="arrow-up3"></div>
-        <div class="menu_box">
-            <div class="mlist1">
-                <li>
-                    <span>日常工作3</span>
-                    <a href="">日常工作</a>
-                </li>
-                <li>
-                    <span>报销管理</span>
-                    <a href="">报销单</a>
-                </li>
-            </div>
-            <div class="mlist1">
-                <li>
-                    <span>任务管理</span>
-                    <a href="">任务</a>
-                </li>
-                <li>
-                    <span>考勤</span>
-                    <a href="">考勤登记</a>
-                    <a href="">请假单</a>
-                </li>
-            </div>
-
-        </div>
-    </div>
-</div>
 
 <!--tab Start-->
-<div class="box">
-    <div class="index-href"><a href="#" onclick="alert('回到首页');">首页</a></div>
-    <ul>
-        <li>客户1<sup>X</sup></li>
-        <li>客户2<sup>X</sup></li>
-    </ul>
-    <div class="tab-page">
-        <!--search-nav Start-->
-        <div class="search-nav">
-            <label>客户名称</label>
-            <input class="name" type="text"/>
-            <label>国家</label>
-            <input class="name" type="text"/>
-            <label>邮箱</label>
-            <input class="name" type="text"/>
-            <label>关注产品</label>
-            <input class="name" type="text"/>
-            <a href="" title="查询"><span><i class="fi-search"></i></span></a>
-            <a href="" title="清除"> <span><i class="fi-reset"></i></span></a>
-            <a href="" title="清除"><span><i class="fi-expand"></i></span></a>
-        </div>
-        <!--search-nav End-->
-        <!--列表上方操作区域 Start-->
-        <div class="icon-nav">
-            <ul class="hh-avg-sm-2 hh-thumbnails">
-                <li>
-                    <a class="btn" href="javascript:;" onclick="return Modal.show('MyDiv','normal-1');" title="添加">
-                        <i class="fi-add"></i>
-                    </a>
-                    <a class="btn" href="javascript:;"  title="未知">
-                        <i class="fi-delete"></i>
-                    </a>
-                    <a class="btn" href="javascript:;"  title="未知">
-                        <i class="fi-cust-assign"></i>
-                    </a>
-                    <a class="btn" href="javascript:;"  title="未知">
-                        <i class="fi-cust-merge"></i>
-                    </a>
-                    <a class="btn" href="javascript:;"  title="未知">
-                        <i class="fi-cust-repeat"></i>
-                    </a>
-                    <a class="btn" href="javascript:;"  title="未知">
-                        <i class="fi-offer"></i>
-                    </a>
-                </li>
-                <li>
-                    <div class="rt">
-                        <a class="btn" href="javascript:;" title="颜色分类">
-                            <i class="fi-color">
-                                <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
-                            </i>
-                        </a>
-                        <a class="btn" href="javascript:;"  title="收藏">
-                            <i class="fi-not-follow"></i>
-                        </a>
-                        <a class="btn" href="javascript:;"  title="删除">
-                            <i class="fi-remind"></i>
-                        </a>
-                    </div>
+<div class="box3">
+    <div class="home-i"><i class="ic-i-home"></i></div>
 
 
-                </li>
-            </ul>
 
-        </div>
-        <!--列表上方操作区域 End-->
-        <!--table Start-->
-        <table class="hh-table hh-table-hover">
-            <thead>
-            <tr>
-                <th><i class="fi-m-default"></i></th>
-                <th><i class="fi-picker"></i></th>
-                <th><i class="fi-not-follow"></i></th>
-                <th>客户名称</th>
-                <th>所属国家</th>
-                <th>客户等级</th>
-                <th>客户来源</th>
-                <th>网站</th>
-                <th>主要联系人</th>
-                <th>创建时间</th>
-                <th>分管人</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td><i class="select-checkbox"></i></td>
-                <td><i class="fi-picker" style="color:#333"></i></td>
-                <td><i class="fi-not-follow" style="color:#333"></i></td>
-                <td>Food Processing Innovations Center LLC</td>
-                <td>德国</td>
-                <td>二级</td>
-                <td>网络</td>
-                <td>http://www.zhaodeng.com</td>
-                <td>余丹</td>
-                <td>2016-11-20</td>
-                <td>于洋洋</td>
-            </tr>
-            <tr>
-                <td><i class="select-checkbox"></i></td>
-                <td><i class="fi-picker" style="color:#333"></i></td>
-                <td><i class="fi-not-follow" style="color:#333"></i></td>
-                <td>Food Processing Innovations Center LLC</td>
-                <td>德国</td>
-                <td>二级</td>
-                <td>网络</td>
-                <td>http://www.zhaodeng.com</td>
-                <td>余丹</td>
-                <td>2016-11-20</td>
-                <td>于洋洋</td>
-            </tr>
-            </tbody>
-        </table>
-        <!--table End-->
-
-        <!--弹出层时背景层DIV-->
-        <div id="fade" class="black_overlay"></div>
-        <div id="MyDiv" class="white_content rodal-flip-enter"  style="animation-duration: 300ms;border-radius: 5px">
-            <div class="change" >
-                <div class="tit">新增</div>
-                <span id="enlarge" class="enlarge" style="  display : block ;" onclick="return Modal.fullscreen('MyDiv','normal-1');"><i class="fi-zoom-in"></i></span>
-                <span id="narrow"  class="shrink" style="  display : none ; " onclick="return Modal.show('MyDiv','normal-1');" ><i class="fi-zoom-out"></i></span>
+</div>
+<div class="container">
+    <div class="col1">
+        <!--Punch card Start-->
+        <div class="index-bd-box hh-radius hh-pd10">
+            <div class="Punch_l">
+                <h1 id ='time'>13:18:44</h1><span id ='year'>2016/09/06</span>
+                <p>IP:192.168.3.98</p>
             </div>
-            <div class="mod-cent">
-                目前来说，我还是喜欢这个自己改造的弹出层。自己在项目中也用的是这个。<br/>
-
-                <div class="foot">
-                    <a class="hh-btn hh-btn-secondary hh-radius" onclick="return Modal.close('MyDiv');">关闭并保存</a>
-                    <a class="hh-btn hh-btn-default hh-radius" onclick="return Modal.close('MyDiv');">取消</a>
+            <div class="Punch_r">
+                <button type="button" class="dk-btn hh-btn-primary hh-radius">打卡</button>
+            </div>
+        </div>
+        <!--Punch card End-->
+        <!--Currency exchange Start-->
+        <div class="index-bd-box hh-radius mt10">
+            <div class="currency-hd">
+                <h2>货币兑换</h2>
+            </div>
+            <div class="currency-bd">
+                <h2>1 USD=6.6707 CNY</h2>
+                <input type="text" class="hh-form-field hh-radius" />
+                <div class="currency-box">
+                    <a href="javascript:void(0);" class="currency-btn select-from-currency">
+                        <span class="select-inner">
+                           <span class="currency-selected" data-lang="zh">USD</span>
+                           <i class="arrow-down"></i>
+                        </span>
+                        <div class="translate-currency" style="display:none;">
+                            <span href="">USA</span>
+                        </div>
+                    </a>
+                    <i class="fi-move-to"></i>
+                    <a href="javascript:void(0);" class="currency-btn select-from-currency">
+                        <span class="select-inner">
+                           <span class="currency-selected" data-lang="zh">CNY</span>
+                           <i class="arrow-down"></i>
+                        </span>
+                        <div class="translate-currency" style="display:none;">
+                            <span href="">USA</span>
+                        </div>
+                    </a>
+                    <button type="button" class="ar-btn hh-btn-primary hh-radius">转换</button>
+                </div>
+                <div class="dictionary-title t10">汇率1.000000</div>
+                <div class="dictionary-title">更新时间：2016-10-16   18:45:30</div>
+            </div>
+        </div>
+        <!--Currency exchange End-->
+        <!--News Start-->
+        <div class="index-bd-box hh-radius hh-pd0 mt10">
+            <!--tab Start-->
+            <div class="box i-news">
+                <ul>
+                    <li>新闻</li>
+                    <li>在线调查</li>
+                    <li>意见箱</li>
+                    <li>电子公告</li>
+                </ul>
+                <div class="tab-page">
+                    <div class="news-list-box">
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                    </div>
+                    <div class="more"><a href="">更多<i class="ic-i-arrow-more"></i></a></div>
+                </div>
+                <div class="tab-page">
+                    <div class="news-list-box">
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                    </div>
+                    <div class="more"><a href="">更多<i class="ic-i-arrow-more"></i></a></div>
+                </div>
+                <div class="tab-page">
+                    <div class="news-list-box">
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                    </div>
+                    <div class="more"><a href="">更多<i class="ic-i-arrow-more"></i></a></div>
+                </div>
+                <div class="tab-page">
+                    <div class="news-list-box">
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                    </div>
+                    <div class="more"><a href="">更多<i class="ic-i-arrow-more"></i></a></div>
                 </div>
             </div>
 
-        </div>
-    </div>
-    <div class="tab-page">内容二</div>
-</div>
+            <!--tab End-->
 
+        </div>
+        <!--News End-->
+
+    </div>
+    <div class="col2">
+        <!--i-Email Start-->
+        <div class="index-bd-box hh-radius hh-pd0">
+            <div class="i-Email-hd">
+                <h2>邮件<span class="sup">12</span></h2>
+                <a><i class="ic-i-write-mails"></i></a>
+            </div>
+            <div class="i-Email-bd">
+                <div class="list">
+                    <li><a class="box_space" href="">China 's largest e - mail service providers</a><span class="Enclosure"><i class="ic-i-Enclosure"></i></span><span class="En2">2016-11-24</span></li>
+                    <p class="box_space">Can check more than 150 countries and regions, currency exchange rates, and conversion</p>
+                </div>
+                <div class="list">
+                    <li><a class="box_space" href="">张先森</a><span class="Enclosure"><i class="ic-i-Enclosure"></i></span><span class="En2">2016-11-24</span></li>
+                    <p>1美元等于多少人民币 离岸人民币汇率查询</p>
+                </div>
+                <div class="list">
+                    <li><a class="box_space" href="">刘文</a><span class="Enclosure"><i class="ic-i-Enclosure"></i></span><span class="En2">2016-11-24</span></li>
+                    <p class="box_space">理财购物类软件一款不错的货币汇率转换程序，支持世界上主要的币种</p>
+                </div>
+                <div class="list">
+                    <li><a class="box_space" href="">杨博丞</a><span class="Enclosure"><i class="ic-i-Enclosure"></i></span><span class="En2">2016-11-24</span></li>
+                    <p class="box_space">外汇牌价的免费汇率换算器或旅行参考卡</p>
+                </div>
+                <div class="list">
+                    <li><a class="box_space" href="">CNY </a><span class="Enclosure"><i class="ic-i-Enclosure"></i></span><span class="En2">2016-11-24</span></li>
+                    <p class="box_space">2016 从国际货币基金组织 得到更新。日元 的汇率最近在十二月 1, 2016 从国际货币基金组织 得到更新</p>
+                </div>
+                <div class="list">
+                    <li><a class="box_space" href="">汇率查询</a><span class="Enclosure"><i class="ic-i-Enclosure"></i></span><span class="En2">2016-11-24</span></li>
+                    <p class="box_space">美元 银行汇率比较 汇率换算 汇率查询 汇率比较 人民币汇率 美元汇率 -外汇汇率-日圆汇率 港币汇率 欧元汇率 汇率走势图</p>
+                </div>
+                <div class="list">
+                    <li><a class="box_space" href="">China 's largest e - mail service providers</a><span class="Enclosure"><i class="ic-i-Enclosure"></i></span><span class="En2">2016-11-24</span></li>
+                    <p class="box_space">Can check more than 150 countries and regions, currency exchange rates, and conversion</p>
+                </div>
+                <div class="more"><a href="">更多<i class="ic-i-arrow-more"></i></a></div>
+            </div>
+
+        </div>
+        <!--i-Email End-->
+    </div>
+    <div class="col3">
+        <!--i-task Start-->
+        <div class="index-bd-box hh-radius hh-pd0">
+            <div class="box i-task">
+                <ul>
+                    <li>新闻</li>
+                    <li>在线调查</li>
+                </ul>
+                <div class="tab-page">
+                    <div class="news-list-box">
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                    </div>
+                    <div class="more"><a href="">更多<i class="ic-i-arrow-more"></i></a></div>
+                </div>
+                <div class="tab-page">
+                    <div class="news-list-box">
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                        <li><a class="box_space" href="">总理点赞的赣南脐橙已被抢购一空</a><span>9/29</span></li>
+                    </div>
+                    <div class="more"><a href="">更多<i class="ic-i-arrow-more"></i></a></div>
+                </div>
+
+            </div>
+        </div>
+        <!--i-task End-->
+    </div>
+</div>
 <!--tab End-->
 <script src="js/global.js"></script>
 <script src="js/utils.js"></script>
@@ -260,6 +256,9 @@
     var boxList = utils.getElementsByClass("box");
     var box1 = new Tab(boxList[0], 0);
 </script>
+
+
+
 
 </body>
 </html>
