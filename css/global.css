@@ -3,6 +3,12 @@
     filter: url(blur.svg#blur);  -webkit-filter: blur(1px);  -moz-filter: blur(1px);  -ms-filter: blur(1px);  filter: blur(1px);
     filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
 }
+/*截取字符*/
+.box_space {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
 /*
 修复有缺陷的CSS盒模型
 */
@@ -16,6 +22,7 @@
 html,
 body {
     min-height: 100%;
+    -webkit-backface-visibility: hidden;
 
 }
 
@@ -516,15 +523,17 @@ th {
 .hh-table > thead > tr > td,
 .hh-table > tbody > tr > td,
 .hh-table > tfoot > tr > td {
-    padding: 0.7rem;
-    line-height: 1.8; text-align: left;
+    padding: 0px 10px;
+    line-height:36px; text-align: left;
     vertical-align: top;
-    border-top: 1px solid #ddd;
+    border-top: 0px solid #ddd;
 }
 .hh-table > thead > tr > th {
     vertical-align: bottom;
     border-bottom: 0px solid #ddd;
-    color: #8c949b;
+    color: #9facbd;
+    font-size: 14px;
+    font-weight: 100;
 }
 .hh-table > caption + thead > tr:first-child > th,
 .hh-table > colgroup + thead > tr:first-child > th,
@@ -720,7 +729,7 @@ th {
 
 /* site-header(头部导航)
 ========================================================================================= */
-.site-header{ height:40px; padding:0 50px;
+.site-header{ height:80px; padding:0 10px;
     FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#4125e8,endColorStr=#8fd0d9); /*IE 6 7 8*/
     background: -ms-linear-gradient(left,#4125e8,#8fd0d9);        /* IE 10 */
     background:-moz-linear-gradient(left,#4125e8,#8fd0d9);/*火狐*/
@@ -730,17 +739,16 @@ th {
     background:-webkit-gradient(linear,0 50%,100% 50%,from(#4125e8),to(#8fd0d9));/*谷歌*/
 
 }
-.site-header .logo{ padding-right: 60px; float: left}.site-header .logo img{ margin-top: 10px; }
-.site-header .nav{width: 460px; float:left; }
-.site-header .nav a{display:inline-block; line-height:40px; color: #fff;cursor: pointer; font-size:16px; margin: auto 20px}
-.site-header .header-searchBox{width:238px; height:24px; padding: 2px 7px 4px 15px; background:#94a0e9;    float:left;border-radius: 13px; margin-top: 8px; margin-left: 10px}
-.fi-search2{color:#fff;cursor: pointer;}
-.site-header .header-searchBox .searchIput{ width:180px; height:18px;background:none;font-size: 12px; color: #fff; border: none; margin-top: -4px; margin-left: 10px}
+.site-header .logo{ padding-right: 90px; float: left}.site-header .logo img{ margin-top: 10px; }
+
+.site-header .header-searchBox{width:238px; height:24px; padding: 2px 7px 4px 15px; background:#94a0e9;    float:left;border-radius: 13px; margin-top: 8px; margin-left:30%}
+.fi-search2{color:#fff;cursor: pointer;font-size:20px;}
+.site-header .header-searchBox .searchIput{ width:180px; height:18px;background:none;color: #fff; border: none; margin-top: -4px; margin-left: 10px}
 
 .site-header .hh-sher .bor{width:200px;height:26px; background:#94a0e9 url("../images/search-1.png") no-repeat 8px 5px; padding-left: 26px; padding-right: 10px;  font-size:12px;vertical-align: middle; color: #fff; border: none;  }
 
-.user-link{width: 244px; margin-top: 2px; float: right}
-.user-link ul li{float:left;width:54px;font-size: 24px}
+.user-link{width: 350px; margin-top: 2px; float: right}
+.user-link ul li{float:left;width:46px;font-size:30px;}
 .user-link ul li a{color: #fff}
 .user-link ul li sub{width:18px;height:18px; line-height: 16px; font-size: 10px; text-align: center; color: #ffffff; top:0px; display:block; background-color: #f21211; border-radius: 10px; margin-left:22px; margin-top:4px;position: absolute}
 
@@ -830,6 +838,9 @@ fieldset[disabled] .hh-btn {
 .hh-btn.hh-radius {
     border-radius: 6px;
 }
+.hh-radius {
+    border-radius: 6px;
+}
 .hh-btn-default {
     color: #444;
     background-color: #e6e6e6;
@@ -880,8 +891,8 @@ fieldset[disabled] .hh-btn-default.hh-active {
 }
 .hh-btn-primary {
     color: #fff;
-    background-color: #0e90d2;
-    border-color: #0e90d2;
+    background-color: #49a8f3;
+    border-color: #49a8f3;
 }
 a.hh-btn-primary:visited {
     color: #fff;
@@ -1175,13 +1186,227 @@ input[type="button"].hh-btn-block {
 
 /* 组件：等分网格
 ========================================================================================= */
-.hh-thumbnails {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+.hh-g {
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden
 }
-.hh-thumbnails > li {
-    padding: 0 .5rem 1rem .5rem;
+.hh-g:before,
+.hh-g:after {
+    content: " ";
+    display: table;
 }
+.hh-g:after {
+    clear: both;
+}
+.hh-g .hh-g {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    width: auto;
+}
+.hh-g .hh-g.hh-g-collapse {
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+}
+
+.hh-g.hh-g-collapse .hh-g {
+    margin-left: 0;
+    margin-right: 0;
+}
+.hh-g-collapse [class*="hh-u-"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+.hh-g-fixed {
+    max-width: 1000px;
+}
+[class*="hh-u1-"] {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    float: left;
+    position: relative;
+}
+[class*="hh-u-"] + [class*="hh-u-"]:last-child {
+    float: right;
+}
+[class*="hh-u-"] + [class*="hh-u-"].hh-u-end {
+    float: left;
+}
+
+@media only screen and (min-width:1025px) {
+    .hh-u-lg-1 {
+        width: 8.33333333%;
+    }
+    .hh-u-lg-2 {
+        width: 16.66666667%;
+    }
+    .hh-u-lg-3 {
+        width: 25%;
+    }
+    .hh-u-lg-4 {
+        width: 33.33333333%;
+    }
+    .hh-u-lg-5 {
+        width: 41.66666667%;
+    }
+    .hh-u-lg-6 {
+        width: 50%;
+    }
+    .hh-u-lg-7 {
+        width: 58.33333333%;
+    }
+    .hh-u-lg-8 {
+        width: 66.66666667%;
+    }
+    .hh-u-lg-9 {
+        width: 75%;
+    }
+    .hh-u-lg-10 {
+        width: 83.33333333%;
+    }
+    .hh-u-lg-11 {
+        width: 91.66666667%;
+    }
+    .hh-u-lg-12 {
+        width: 100%;
+    }
+    .hh-u-lg-pull-0 {
+        right: 0;
+    }
+    .hh-u-lg-pull-1 {
+        right: 8.33333333%;
+    }
+    .hh-u-lg-pull-2 {
+        right: 16.66666667%;
+    }
+    .hh-u-lg-pull-3 {
+        right: 25%;
+    }
+    .hh-u-lg-pull-4 {
+        right: 33.33333333%;
+    }
+    .hh-u-lg-pull-5 {
+        right: 41.66666667%;
+    }
+    .hh-u-lg-pull-6 {
+        right: 50%;
+    }
+    .hh-u-lg-pull-7 {
+        right: 58.33333333%;
+    }
+    .hh-u-lg-pull-8 {
+        right: 66.66666667%;
+    }
+    .hh-u-lg-pull-9 {
+        right: 75%;
+    }
+    .hh-u-lg-pull-10 {
+        right: 83.33333333%;
+    }
+    .hh-u-lg-pull-11 {
+        right: 91.66666667%;
+    }
+    .hh-u-lg-push-0 {
+        left: 0;
+    }
+    .hh-u-lg-push-1 {
+        left: 8.33333333%;
+    }
+    .hh-u-lg-push-2 {
+        left: 16.66666667%;
+    }
+    .hh-u-lg-push-3 {
+        left: 25%;
+    }
+    .hh-u-lg-push-4 {
+        left: 33.33333333%;
+    }
+    .hh-u-lg-push-5 {
+        left: 41.66666667%;
+    }
+    .hh-u-lg-push-6 {
+        left: 50%;
+    }
+    .hh-u-lg-push-7 {
+        left: 58.33333333%;
+    }
+    .hh-u-lg-push-8 {
+        left: 66.66666667%;
+    }
+    .hh-u-lg-push-9 {
+        left: 75%;
+    }
+    .hh-u-lg-push-10 {
+        left: 83.33333333%;
+    }
+    .hh-u-lg-push-11 {
+        left: 91.66666667%;
+    }
+    .hh-u-lg-offset-0 {
+        margin-left: 0;
+    }
+    .hh-u-lg-offset-1 {
+        margin-left: 8.33333333%;
+    }
+    .hh-u-lg-offset-2 {
+        margin-left: 16.66666667%;
+    }
+    .hh-u-lg-offset-3 {
+        margin-left: 25%;
+    }
+    .hh-u-lg-offset-4 {
+        margin-left: 33.33333333%;
+    }
+    .hh-u-lg-offset-5 {
+        margin-left: 41.66666667%;
+    }
+    .hh-u-lg-offset-6 {
+        margin-left: 50%;
+    }
+    .hh-u-lg-offset-7 {
+        margin-left: 58.33333333%;
+    }
+    .hh-u-lg-offset-8 {
+        margin-left: 66.66666667%;
+    }
+    .hh-u-lg-offset-9 {
+        margin-left: 75%;
+    }
+    .hh-u-lg-offset-10 {
+        margin-left: 83.33333333%;
+    }
+    .hh-u-lg-offset-11 {
+        margin-left: 91.66666667%;
+    }
+    .hh-u-lg-reset-order {
+        margin-left: 0;
+        margin-right: 0;
+        left: auto;
+        right: auto;
+        float: left;
+    }
+    [class*="hh-u-"].hh-u-lg-centered {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    [class*="hh-u-"].hh-u-lg-centered:last-child {
+        float: none;
+    }
+    [class*="hh-u-"].hh-u-lg-uncentered {
+        margin-left: 0;
+        margin-right: 0;
+        float: left;
+    }
+    [class*="hh-u-"].hh-u-lg-uncentered:last-child {
+        float: left;
+    }
+}
+/* ==========================================================================
+   Component: AVG Grid
+ ============================================================================ */
 [class*="hh-avg-"] {
     display: block;
     padding: 0;
@@ -1312,6 +1537,10 @@ input[type="button"].hh-btn-block {
     }
 }
 
+
+
+
+
 /* 组件：from
 ========================================================================================= */
 /* Normalize */
@@ -1354,7 +1583,7 @@ select[size] {
 select optgroup {
     font-size: inherit;
     font-style: inherit;
-    font-family: inherit;
+    font-fhhily: inherit;
 }
 input[type="file"]:focus,
 input[type="radio"]:focus,
@@ -1395,7 +1624,7 @@ output {
 .hh-form-field {
     display: block;
     width: 100%;
-    padding: 0.5em;
+    padding: 6px;
     font-size: 1.6rem;
     line-height: 1.2;
     color: #555555;
@@ -1618,7 +1847,7 @@ fieldset[disabled] .hh-form-field {
 .hh-form input[type="tel"].hh-radius,
 .hh-form input[type="color"].hh-radius,
 .hh-form-field.hh-radius {
-    border-radius: 2px;
+    border-radius: 6px;
 }
 .hh-form select.hh-round,
 .hh-form textarea.hh-round,
@@ -2149,3 +2378,13 @@ fieldset[disabled] .hh-checkbox-inline {
         float: left;
     }
 }
+
+
+
+/* 组件：CSS3动画(这是一个应用于链接，按钮，徽标，SVG，精选图片等的CSS3动态悬停效果的集合。)
+========================================================================================= */
+/* hover：经过div向上移动5个像素 */
+.hvr-grow {transition-duration: 0.3s;}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {-webkit-transform:translateY(-5px);-moz-transform:translateY(-5px);-ms-transform:translateY(-5px);  -o-transform:translateY(-5px);transform:translateY(-5px)  }
