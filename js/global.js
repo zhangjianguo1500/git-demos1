@@ -1,51 +1,51 @@
 ~function () {
     var ModalChange = {
-      show:function (elDom,className){
-          var el = document.getElementById(elDom),
-          enlarge =  utils.getElementsByClass("enlarge",el)[0],
-          narrow =  utils.getElementsByClass("shrink",el)[0];
+        show:function (elDom,className){
+            var el = document.getElementById(elDom),
+                enlarge =  utils.getElementsByClass("enlarge",el)[0],
+                narrow =  utils.getElementsByClass("shrink",el)[0];
 
-          if("block"==fade.style.display&&!utils.hasClass(el,"fullscreen"))
-          return;
+            if("block"==fade.style.display&&!utils.hasClass(el,"fullscreen"))
+                return;
 
-          utils.removeClass(el,"fullscreen");
-          utils.addClass(el,className);
+            utils.removeClass(el,"fullscreen");
+            utils.addClass(el,className);
 
-          utils.css(el,{
-            display:"block"
-          });
-          utils.css(enlarge,{
-            display:"block"
-          });
-          utils.css(narrow,{
-            display:"none"
-          });
+            utils.css(el,{
+                display:"block"
+            });
+            utils.css(enlarge,{
+                display:"block"
+            });
+            utils.css(narrow,{
+                display:"none"
+            });
 
-          this.fade.style.display='block';
-          this.fade.style.width = document.body.scrollWidth;
-          this.fade.style.height=utils.css(document,"height");
-      },
-      close:function(elDom) {
-          var el = document.getElementById(elDom);
+            this.fade.style.display='block';
+            this.fade.style.width = document.body.scrollWidth;
+            this.fade.style.height=utils.css(document,"height");
+        },
+        close:function(elDom) {
+            var el = document.getElementById(elDom);
 
-          el.style.display='none';
-          this.fade.style.display='none';
-      },
-      fullscreen:function(elDom,oldClassName){
-          var el = document.getElementById(elDom),
-          enlarge =  utils.getElementsByClass("enlarge",el)[0],
-          narrow =  utils.getElementsByClass("shrink",el)[0];
+            el.style.display='none';
+            this.fade.style.display='none';
+        },
+        fullscreen:function(elDom,oldClassName){
+            var el = document.getElementById(elDom),
+                enlarge =  utils.getElementsByClass("enlarge",el)[0],
+                narrow =  utils.getElementsByClass("shrink",el)[0];
 
-          utils.removeClass(el,oldClassName);
-          utils.addClass(el,"fullscreen");
-          utils.css(enlarge,{
-            display:"none"
-          });
-          utils.css(narrow,{
-            display:"block"
-          });
-      },
-      fade: document.getElementById("fade")
+            utils.removeClass(el,oldClassName);
+            utils.addClass(el,"fullscreen");
+            utils.css(enlarge,{
+                display:"none"
+            });
+            utils.css(narrow,{
+                display:"block"
+            });
+        },
+        fade: document.getElementById("fade")
     };
 
     function TabChange(container, defaultIndex) {
@@ -78,14 +78,16 @@
                 e = e || window.event;
                 e.target = e.target || e.srcElement;
                 if(e.target.tagName.toLowerCase() === "li"){
-                  utils.css(utils.firstChild(e.target),{
-                    color:"grey"
-                  });
+                    utils.css(utils.firstChild(e.target),{
+                        color:"grey",
+                        display:"block"
+                    });
                 }
                 if(e.target.tagName.toLowerCase() === "sup"){
-                  utils.css(e.target,{
-                    color:"red"
-                  });
+                    utils.css(e.target,{
+                        color:"red",
+                        display:"block"
+                    });
                 }
             };
         },
@@ -95,14 +97,15 @@
                 e = e || window.event;
                 e.target = e.target || e.srcElement;
                 if(e.target.tagName.toLowerCase() === "li"){
-                  utils.css(utils.firstChild(e.target),{
-                    color:utils.css(e.target,"background-color")
-                  });
+                    utils.css(utils.firstChild(e.target),{
+                        display:"none"
+                    });
                 }
                 if(e.target.tagName.toLowerCase() === "sup"){
-                  utils.css(e.target,{
-                    color:"grey"
-                  });
+                    utils.css(e.target,{
+                        color:"grey",
+                        display:"block"
+                    });
                 }
             };
         },
@@ -132,9 +135,9 @@
             this.hover();
             this.hoverOut();
             for(var i=0;i<document.getElementsByTagName("sup").length;i++){
-              utils.css(document.getElementsByTagName("sup")[i],{
-                color:utils.css(document.getElementsByTagName("sup")[i].parentNode,"background-color")
-              });
+                utils.css(document.getElementsByTagName("sup")[i],{
+                    display:"none"
+                });
             }
             return this;
         }
@@ -145,57 +148,54 @@
 }();
 
 
-/* ����������˵�
+/* 组件：获取系统时间
  ========================================================================================= */
-function $G(Read_Id) { return document.getElementById(Read_Id) }
-
-var openedObjId=null
-function Effect(ObjectId){
-    if (openedObjId){
-        $G(openedObjId+"tab");
-        Start(openedObjId,'Close');
-    }
-    if(openedObjId!=ObjectId){
-        $G(ObjectId+"tab");
-        Start(ObjectId,'Opens');
-        openedObjId=ObjectId
-    }
-    else openedObjId=null
+window.onload = function(){
+    showTime();
 }
-function Start(ObjId,method){
-    var BoxHeight = $G(ObjId).offsetHeight;
-    var MinHeight = 0;
-    var MaxHeight = 130;
-    var BoxAddMax = 1;
-    var Every_Add = 0.1;
-    var Reduce    = (BoxAddMax - Every_Add);
-    var Add       = (BoxAddMax + Every_Add);
-
-    if (method == "Close"){
-        var Alter_Close = function(){
-            BoxAddMax /= Reduce;
-            BoxHeight -= BoxAddMax;
-            if (BoxHeight <= MinHeight){
-                $G(ObjId).style.display = "none";
-                window.clearInterval(BoxAction);
-            }
-            else $G(ObjId).style.height = BoxHeight;
-        }
-        var BoxAction = window.setInterval(Alter_Close,1);
+function showTime(){
+    var myDate = new Date();
+    var year = myDate.getFullYear();
+    var month = myDate.getMonth() + 1;
+    var date = myDate.getDate();
+    //var dateArr = ["日","一",'二','三','四','五','六'];
+    //var day = myDate.getDay();
+    var hours = myDate.getHours();
+    var minutes = formatTime(myDate.getMinutes());
+    var seconds = formatTime(myDate.getSeconds());
+    /*var systemTime = document.getElementById("time");
+     systemTime.innerHTML = " " + year + "年" + month +"月" + date + "日" + " " + hours + ":" + minutes + ":" + seconds;*/
+    var systemTime = document.getElementById("year");
+    systemTime.innerHTML = " " + year + "/" + month +"/" + date + "/" + " " ;
+    var systemTime = document.getElementById("time");
+    systemTime.innerHTML = "  " + hours + ":" + minutes + ":" + seconds;
+    setTimeout("showTime()",500);
+}
+//格式化时间：分秒。
+function formatTime (i){
+    if(i < 10){
+        i = "0" + i;
     }
+    return i;
+}
 
-    else if (method == "Opens"){
-        var Alter_Opens = function(){
-            BoxAddMax *= Add;
-            BoxHeight += BoxAddMax;
-            if (BoxHeight >= MaxHeight){
-                $G(ObjId).style.height = MaxHeight;
-                window.clearInterval(BoxAction);
-            }else{
-                $G(ObjId).style.display= "block";
-                $G(ObjId).style.height = BoxHeight;
-            }
-        }
-        var BoxAction = window.setInterval(Alter_Opens,1);
+/* 组件：header菜单
+ ========================================================================================= */
+var lastCursel = -1;
+function change(name,cursel){
+    var menu=document.getElementById("con_"+name+"_"+cursel);
+    if (menu.style.display == "")
+    {
+        menu.style.display = "none";
     }
+    else
+    {
+        menu.style.display = "";
+    }
+    if (lastCursel>=0 && lastCursel != cursel)
+    {
+        var lastmenu=document.getElementById("con_"+name+"_"+lastCursel);
+        lastmenu.style.display = "none";
+    }
+    lastCursel = cursel;
 }
