@@ -535,8 +535,7 @@
     padding: 0px 0px 4px 0px;
 }
 /*index task*/
-.i-task-hd {border-bottom: #eaeef3 solid 1px; height:43px; margin: 0px 10px 0 10px}
-.i-task-hd h2{padding:0 10px;color:#634eeb;height:43px; line-height:43px;margin:0; padding:0 6px;font-weight: 100;border-bottom: #634eeb solid 1px; display:block;position: absolute}
+
 
 .i-task{width:100%;padding:0; margin:0;}
 .i-task>ul{
@@ -575,4 +574,178 @@
 }
 .i-task .tab-page.select {
     display: block;
+}
+.i-taskboder{border-top: none}
+.i-task .tab-page .more {
+    text-align: right;
+    border-top: #eaeef3 solid 1px;
+    margin: 0 10px;
+    line-height:42px;
+    padding: 0px 0px 4px 0px;
+}
+.i-task-table td{color: #3c4859}
+.i-task-table a{color: #2095f2}
+
+/*index schedule*/
+.i-schedule-hd {border-bottom: #eaeef3 solid 1px; height:43px; margin: 0px 10px 0 10px}
+.i-schedule-hd h2{padding:0 10px;color:#634eeb;height:43px; line-height:43px;margin:0; padding:0 6px;font-weight: 100;border-bottom: #634eeb solid 1px; display:block;position: absolute}
+
+.i-schedule-bd {
+    margin-left: 0px; padding: 0px 10px;overflow: hidden;
+}
+.i-schedule-bd .year{
+    line-height: 38px;
+}
+.i-schedule-bd .year .a-lf{
+    width:10%;
+    display: block;
+    float: left;
+}
+.i-schedule-bd .year .y-m{
+    width:80%;
+    display: block;
+    text-align: center;
+    float: left;
+}
+.i-schedule-bd .year .a-rg{
+    width:10%;
+    display: block;
+    float: left;
+    text-align: right;
+
+}
+.i-schedule-bd .week{
+    line-height: 38px;
+    text-align: center;
+}
+.i-schedule-bd .week .hd{
+    color: #9facbd;
+
+}
+.i-schedule-bd .week .p-b10{
+    padding-bottom: 10px;
+}
+.i-schedule-bd .week .current{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #49a8f3;
+    color: #fff;
+}
+.i-schedule-bd .week .current span{
+    width:50px;height:3px;display:block;font-size:12px;line-heigth:3px;text-align:center;color:#fff;margin:-24px auto auto auto;text-decoration:none
+}
+
+
+.i-schedule-bd .week .Expired{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    color: #afbac9;
+}
+.i-schedule-bd .week .Expired span{
+    width:50px;height:3px;display:block;font-size:12px;line-heigth:3px;text-align:center;color:#afbac9;margin:-24px auto auto auto;text-decoration:none
+}
+
+.i-schedule-bd .week .not-Expired{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    color: #3c4859;
+}
+.i-schedule-bd .week .not-Expired span{
+    width:50px;height:3px;display:block;font-size:12px;line-heigth:3px;text-align:center;color:#49a8f3;margin:-24px auto auto auto;text-decoration:none
+}
+.i-schedule-list{
+    height: 28px;
+    line-height: 28px;
+    list-style-type:none;
+    color: #afbac9;
+}
+.i-schedule-list .Expired{
+    line-height: 28px;
+    list-style-type:none;
+    color: #afbac9;
+}
+.i-schedule-list .Expired .lf{
+    width: 75%;
+    float: left;
+}
+.i-schedule-list .Expired .rg{
+    width: 25%;
+    text-align: right;
+    float: right;
+}
+
+
+.i-schedule-list .not-Expired{
+    height: 28px;
+    line-height: 28px;
+    list-style-type:none;
+    color: #3c4859;
+}
+.notE-hover{
+    background-color:;
+    border-radius: 12px;
+    color: #333;
+}
+.E-hover{
+    background-color: #2095f2;
+    border-radius: 12px;
+    color: #fff;
+}
+.i-schedule-list .not-Expired a{
+    color: #3c4859;
+}
+.i-schedule-list .not-Expired .lf{
+    width: 75%;
+    float: left;
+}
+.i-schedule-list .not-Expired .rg{
+    width: 25%;
+    text-align: right;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.i-schedule-bd .list{
+    padding: 0 10px;
+    line-height: 38px;
+    text-align: center;
+    clear: both;
+    overflow: hidden;
+}
+.i-schedule-bd .list a{
+    width: 70%;
+    display: block;
+    line-height: 38px;
+    text-align: left;
+    float: left;
+}
+.i-schedule-bd .list span{
+    width: 20%;
+    display: block;
+    line-height: 38px;
+    text-align: right;
+    float: right;
+}
+
+.i-schedule-bd .more {
+    text-align: right;
+    border-top: #eaeef3 solid 1px;
+    margin: 0 0px;
+    line-height:42px;
+    overflow: hidden;clear: both;
+    padding: 0px 0px 4px 0px;
 }
