@@ -2388,3 +2388,28 @@ fieldset[disabled] .hh-checkbox-inline {
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {-webkit-transform:translateY(-5px);-moz-transform:translateY(-5px);-ms-transform:translateY(-5px);  -o-transform:translateY(-5px);transform:translateY(-5px)  }
+
+/* -- door -- */
+.rodal-dialog {
+
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+@-webkit-keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+@keyframes rodal-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+.rodal-door-enter {
+    -webkit-animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: rodal-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
