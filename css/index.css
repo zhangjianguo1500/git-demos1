@@ -1,4 +1,4 @@
-/* �������б��Ϸ�����
+/* 组件：列表上方搜索
 ========================================================================================= */
 .search-nav {height:60px; margin-top:14px; border-bottom: solid 1px #e9edf2; text-align: left; color: #8c949b}
 .search-nav i{font-size: 15px}
@@ -6,16 +6,16 @@
 .search-nav span{display: block; margin-left: 6px; margin-right: 6px; display: inline-block }
 
 
-/* �������б��Ϸ�icons
+/* 组件：列表上方icons
 ========================================================================================= */
 .icon-nav {height:42px; border-bottom:solid 1px #e9edf2;}
 .icon-nav ul li{padding-bottom: 0; margin-top:8px;}
 .icon-nav .btn {display:block; float:left;padding-left: 10px; padding-right: 10px;}
 .icon-nav .rt{width:126px;float: right}
 
-/* ������ģ̬��
+/* 组件：模态框
 ========================================================================================= */
-/*��������*/
+/*锁屏背景*/
 .black_overlay {
     display: none;
     position: absolute;
@@ -176,13 +176,13 @@
 
 .rodal-flip-enter {
     animation-duration: 300ms;border-radius:6px
-    -webkit-animation: rodal-flip-enter both ease-in;
+-webkit-animation: rodal-flip-enter both ease-in;
     animation: rodal-flip-enter both ease-in;
     -webkit-backface-visibility: visible !important;
     backface-visibility: visible !important;
 }
 
-/* ������ѡ����ر�
+/* 组件：选项卡带关闭
 ========================================================================================= */
 .box{width:100%;padding: 0 10px; margin:-33px auto auto auto;}
 .box>ul{
@@ -191,7 +191,7 @@
     overflow: hidden;
     padding: 0;
     margin: 0;
-    /*overflow: hidden;/!*������Ԫ�صĸ����Ը���Ԫ�ص�Ӱ��*!/*/
+    /*overflow: hidden;/!*清除子元素的浮动对父级元素的影响*!/*/
 }
 .insw{
     float: left;
@@ -246,7 +246,7 @@
 
     text-align: center;
     border-radius: 5px;
-    clear: both;/*��������Ԫ�صĸ����Եܵܵ�Ӱ��*/
+    clear: both;/*清除哥哥元素的浮动对弟弟的影响*/
 }
 .box .tab-page.select {
     display: block;
@@ -279,51 +279,61 @@
     color: #634eeb;
     cursor: pointer;
 }
-#container1 {
+
+
+
+
+/* CSS：index
+========================================================================================= */
+.container {
     width:100%;
     padding: 10px;
     overflow: hidden;
 }
-#col1 {
+.col1 {
     float:left;
     width:25%;
     padding-right: 10px;
 }
-#col2 {
+.col2 {
     float:left;
     width:50%;
-    background:yellow;
+    padding-right: 10px;
 }
-#col3 {
+.col3 {
     float:left;
     width:25%;
-    background:green;
 }
-.ibo{overflow:hidden;padding:10px;border-radius:6px;background-color:#fff;-moz-box-shadow:0px 2px 0px #dedfe0; -webkit-box-shadow:0px 2px 0px #dedfe0; box-shadow:0px 2px 0px #dedfe0;}
+.index-bd-box{background-color:#fff;-moz-box-shadow:0px 2px 0px #dedfe0; -webkit-box-shadow:0px 2px 0px #dedfe0; box-shadow:0px 2px 0px #dedfe0;}
+.hh-pd10{overflow:hidden;padding:10px;}
+.hh-pd0{overflow:hidden;padding:0px;}
 .mt10 {margin-top: 10px}
 
-.time-box-lf{width:180px;height: 50px; float: left}
-.time-box-lf h1{width:100px;height:28px; line-height:24px; font-size:24px; color:#49a8f3;float:left;padding: 0; margin: 0;}
-.time-box-lf span{width:80px;height:28px; line-height:28px; font-size: 10px; color:#575656;float:left;padding: 0; margin: 0;}
-.time-box-lf p{width:100px;height:20px; font-size: 10px;color:#bdbbbb;float:left;padding: 0; margin: 0;}
-.time-box-rg{width:58px;height: 50px; float: right}
-.dk-btn {width: 58px;  display: inline-block;  margin-bottom: 0;  padding: 16px 1em;  vertical-align: middle;  font-size: 14px;  font-weight: normal;  line-height: 1.2;  text-align: center;  white-space: nowrap;  background-image: none;  border: 1px solid transparent;  border-radius: 0;  cursor: pointer;  outline: none;  -webkit-appearance: none;  -webkit-user-select: none;  -moz-user-select: none;  -ms-user-select: none;  user-select: none;  -webkit-transition: background-color 300ms ease-out, border-color 300ms ease-out;  transition: background-color 300ms ease-out, border-color 300ms ease-out;
+/*Punch card*/
+.Punch_l{width:80%;height: 50px; float: left}
+.Punch_l h1{width:120px;height:30px; line-height:24px; font-size:30px; color:#49a8f3;float:left;padding: 0; margin: 0;}
+.Punch_l span{width:80px;height:30px; line-height:28px; font-size: 16px; color:#575656;float:left;padding: 0 0 0 6px; margin: 0;}
+.Punch_l p{width:100%;height:20px; font-size: 12px;color:#bdbbbb;float:left;padding: 0; margin: 0;}
+.Punch_r{width:58px;height: 50px; float: right}
+.Punch_r .dk-btn {width: 58px;  display: inline-block;  margin-bottom: 0;  padding: 16px 1em;  vertical-align: middle;  font-size: 14px;  font-weight: normal;  line-height: 1.2;  text-align: center;  white-space: nowrap;  background-image: none;  border: 1px solid transparent;  border-radius: 0;  cursor: pointer;  outline: none;  -webkit-appearance: none;  -webkit-user-select: none;  -moz-user-select: none;  -ms-user-select: none;  user-select: none;  -webkit-transition: background-color 300ms ease-out, border-color 300ms ease-out;  transition: background-color 300ms ease-out, border-color 300ms ease-out;
 }
-.dk-btn.hh-radius {border-radius: 6px;  }
+.Punch_r .dk-btn.hh-radius {border-radius: 6px;  }
 
-.currency-top {border-bottom: #eaeef3 solid 1px; height:36px;}
-.currency-top h2{padding:0 10px;color:#634eeb;height:36px;margin:0; padding:0;border-bottom: #634eeb solid 1px; display:block;position: absolute}
-.currency-cen {padding:0 10px;display:block;}
-.currency-cen .cr-box{padding:10px 0 0 0;display:block;}
-.currency-cen .t10{padding-top: 10px}
-.currency-cen .dictionary-title{color: #cdcecf}
-.language-btn, .language-btn-disable {
+/*Currency exchange*/
+.currency-hd {border-bottom: #eaeef3 solid 1px; height:42px; margin: 0 10px}
+.currency-hd h2{padding:0 10px;color:#634eeb;height:42px;line-height:42px;margin:0; padding:0 6px;font-weight: 100;border-bottom: #634eeb solid 1px; display:block;position: absolute}
+.currency-bd {padding:0 10px 10px 10px;display:block;}
+.currency-bd h2{padding:4px 10px;display:block; margin-bottom: 0px; font-weight: 100; font-size: 14px}
+.currency-bd .currency-box{padding:10px 0 0 0;display:block;}
+.currency-bd .t10{padding-top: 10px}
+.currency-bd .dictionary-title{color: #cdcecf}
+.currency-btn, .currency-btn-disable {
     display: inline-block;
     height: 30px;
     line-height: 30px;
     color: #333;
 }
-.select-from-language, .select-to-language {
+.select-from-currency, .select-to-currency {
     background: #fff;
     border: 1px solid #dcdcdc;
     border-radius: 5px;
@@ -345,7 +355,7 @@
     z-index: 4;
     left: 0;
 }
-.language-selected {
+.currency-selected {
     font-size: 14px;
 }
 .select-from {
@@ -359,7 +369,7 @@
 }
 .ar-btn.hh-radius {border-radius: 6px;  }
 
-.translate-language {
+.translate-currency {
     position: absolute;
     width: 96px;
     margin-top: -5px;
@@ -372,8 +382,8 @@
     border: 1px solid #dedede;
     border-top: none;
 }
-.translate-language span {display: block; padding-left: 28px; text-align: left; line-height: 20px }
-.translate-language span:hover {background-color: #e9eaeb }
+.translate-currency span {display: block; padding-left: 28px; text-align: left; line-height: 20px }
+.translate-currency span:hover {background-color: #e9eaeb }
 
 
 
@@ -381,7 +391,7 @@
 .menu1 {
     position: absolute;
     z-index: 9999;
-    margin-top: -46px;
+    margin-top: -40px;
     width: 100%;
     padding: 10px 0px;
     height: 800px;
@@ -391,8 +401,372 @@
     position: absolute;
     z-index: 10000;
     width:100px;
+    margin-top: -10px;
     padding: 10px 0px;
     border-radius: 6px;
     height:100px;
-    background-color:rgba(73,168,243,0.9);
+    background-color:rgba(255,255,255,0.9);
+}
+
+
+
+/*index News*/
+.i-news{width:100%;padding:0; margin:0;}
+.i-news>ul{
+    top: 1px;
+    overflow: hidden;
+    height:42px;
+    padding: 0px 0px 0 0px;
+    margin: 0 10px;
+    border-bottom: solid 1px #eaeef3;
+    /*overflow: hidden;/!*清除子元素的浮动对父级元素的影响*!/*/
+}
+
+.i-news>ul li{
+    float: left;
+    margin-right: 8px;
+    padding: 0 6px;
+    height:41px;
+    line-height:41px;
+    font-size: 15px;
+    text-align: center;
+    color: #b5c0cd;
+    cursor: pointer;
+}
+.i-news>ul li.select{
+    background: #fff;
+    color: #4125e8;
+    border-bottom: solid 1px #634eeb;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.i-news .tab-page{
+    display: none;
+    width: 100%;
+    text-align: center;
+    clear: both;/*清除哥哥元素的浮动对弟弟的影响*/
+}
+.i-news .tab-page.select {
+    display: block;
+}
+.i-news .news-list-box {
+    margin-left: 0px; padding: 0px 0px;
+}
+.i-news .news-list-box li{
+    margin-left: 0px; padding: 0px 10px;
+    height: 36px;
+    display: block;
+    line-height: 36px;
+}
+.i-news .news-list-box li:hover{
+    background-color: #e9ecfd;
+}
+.i-news .news-list-box li a{
+    width: 70%;
+    text-align: left;
+    float: left;
+}
+.i-news .news-list-box li span{
+    width: 25%;
+    float: right;
+    text-align: right;
+}
+.i-news .tab-page .more {
+    text-align: right;
+    border-top: #eaeef3 solid 1px;
+    margin: 0 10px;
+    line-height:42px;
+    padding: 0px 0px 4px 0px;
+}
+
+/*index Email*/
+.i-Email-hd {border-bottom: #eaeef3 solid 1px; height:43px; margin: 0px 10px 0 10px}
+.i-Email-hd h2{padding:0 10px;color:#634eeb;height:43px; line-height:43px;margin:0; padding:0 6px;font-weight: 100;border-bottom: #634eeb solid 1px; display:block;position: absolute}
+.i-Email-hd h2 .sup{border-radius:12px;height: 15px; line-height: 15px; color: #fff; font-size: 8px; padding: 0 6px; margin-top: -28px; margin-left: 38px; background:#49a8f3;display:block;position: absolute}
+.i-Email-hd a{width:35px;height:42px; line-height: 42px; color: #D5DCE5; font-size:30px; display:block; position: relative;float: right}
+.i-Email-bd {
+    margin-left: 0px; padding: 0px 0px;
+}
+.i-Email-bd .list {
+    padding: 0px 0px;
+    height: 56px;
+}
+.i-Email-bd .list:hover{
+    background-color: #e9ecfd;
+}
+.i-Email-bd .list li{
+    margin-left: 0px; padding: 5px 10px 0px 10px;
+    height: 24px;
+    display: block;
+    line-height: 24px;
+}
+
+.i-Email-bd .list li a{
+    width: 70%;
+    font-size: 16px;
+    color: #3c4859;
+    float: left;
+    display: block;
+}
+.i-Email-bd .list .Enclosure{
+    width: 10%;
+    font-size: 20px;
+    color: #2095f2;
+    float: left;
+    display: block;
+}
+.i-Email-bd .list .En2{
+    width: 20%;
+    font-size: 14px;
+    text-align: right;
+    color: #9facbd;
+    font-weight: 100;
+    float: left;
+    display: block;
+}
+.i-Email-bd .list p{
+    font-size: 14px;
+    padding: 0 10px;
+    margin: 0;
+    font-weight: 100;
+    color: #9facbd;
+}
+.i-Email-bd .more {
+    text-align: right;
+    border-top: #eaeef3 solid 1px;
+    margin: 0 10px;
+    line-height:42px;
+    padding: 0px 0px 4px 0px;
+}
+/*index task*/
+
+
+.i-task{width:100%;padding:0; margin:0;}
+.i-task>ul{
+    top: 1px;
+    overflow: hidden;
+    height:42px;
+    padding: 0px 0px 0 0px;
+    margin: 0 10px;
+    border-bottom: solid 1px #eaeef3;
+    /*overflow: hidden;/!*清除子元素的浮动对父级元素的影响*!/*/
+}
+
+.i-task>ul li{
+    float: left;
+    margin-right: 8px;
+    padding: 0 6px;
+    height:41px;
+    line-height:41px;
+    font-size: 15px;
+    text-align: center;
+    color: #b5c0cd;
+    cursor: pointer;
+}
+.i-task>ul li.select{
+    background: #fff;
+    color: #4125e8;
+    border-bottom: solid 1px #634eeb;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.i-task .tab-page{
+    display: none;
+    width: 100%;
+    text-align: center;
+    clear: both;/*清除哥哥元素的浮动对弟弟的影响*/
+}
+.i-task .tab-page.select {
+    display: block;
+}
+
+.i-task .tab-page .more {
+    text-align: right;
+    border-top: #eaeef3 solid 1px;
+    margin: 0 10px;
+    line-height:42px;
+    padding: 0px 0px 4px 0px;
+}
+.i-task-table td{color: #3c4859}
+.i-task-table a{color: #2095f2}
+.i-task-table .a1{width: 30%}
+.i-task-table .a2{width: 40%}
+.i-task-table .a3{width: 30%; text-align: right}
+
+/*index schedule*/
+.i-schedule-hd {border-bottom: #eaeef3 solid 1px; height:43px; margin: 0px 10px 0 10px}
+.i-schedule-hd h2{padding:0 10px;color:#634eeb;height:43px; line-height:43px;margin:0; padding:0 6px;font-weight: 100;border-bottom: #634eeb solid 1px; display:block;position: absolute}
+
+.i-schedule-bd {
+    margin-left: 0px; padding: 0px 10px;overflow: hidden;
+}
+.i-schedule-bd .year{
+    line-height: 38px;
+}
+.i-schedule-bd .year .a-lf{
+    width:10%;
+    display: block;
+    float: left;
+}
+.i-schedule-bd .year .y-m{
+    width:80%;
+    display: block;
+    text-align: center;
+    float: left;
+}
+.i-schedule-bd .year .a-rg{
+    width:10%;
+    display: block;
+    float: left;
+    text-align: right;
+
+}
+.i-schedule-bd .week{
+    line-height: 38px;
+    text-align: center;
+}
+.i-schedule-bd .week .hd{
+    color: #9facbd;
+
+}
+.i-schedule-bd .week .p-b10{
+    padding-bottom: 10px;
+}
+.i-schedule-bd .week .current{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #49a8f3;
+    color: #fff;
+}
+.i-schedule-bd .week .current span{
+    width:50px;height:3px;display:block;font-size:12px;line-heigth:3px;text-align:center;color:#fff;margin:-24px auto auto auto;text-decoration:none
+}
+
+
+.i-schedule-bd .week .Expired{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    color: #afbac9;
+}
+.i-schedule-bd .week .Expired span{
+    width:50px;height:3px;display:block;font-size:12px;line-heigth:3px;text-align:center;color:#afbac9;margin:-24px auto auto auto;text-decoration:none
+}
+
+.i-schedule-bd .week .not-Expired{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    color: #3c4859;
+}
+.i-schedule-bd .week .not-Expired span{
+    width:50px;height:3px;display:block;font-size:12px;line-heigth:3px;text-align:center;color:#49a8f3;margin:-24px auto auto auto;text-decoration:none
+}
+.i-schedule-list{
+    height: 28px;
+    line-height: 28px;
+    list-style-type:none;
+    color: #afbac9;
+}
+.i-schedule-list .Expired{
+    line-height: 28px;
+    list-style-type:none;
+    color: #afbac9;
+}
+.i-schedule-list .Expired .lf{
+    width: 75%;
+    float: left;
+}
+.i-schedule-list .Expired .rg{
+    width: 25%;
+    text-align: right;
+    float: right;
+}
+
+
+.i-schedule-list .not-Expired{
+    height: 28px;
+    line-height: 28px;
+    list-style-type:none;
+    color: #3c4859;
+}
+.notE-hover{
+    background-color:;
+    border-radius: 12px;
+    color: #333;
+}
+
+.i-schedule-list .not-Expired a{
+    color: #3c4859;
+}
+.i-schedule-list .not-Expired .lf{
+    width: 75%;
+    float: left;
+}
+.i-schedule-list .not-Expired .rg{
+    width: 25%;
+    text-align: right;
+    float: right;
+}
+
+
+
+
+
+
+.schedule-list-box {
+    margin-left: 0px; padding: 0px 0px;
+}
+.schedule-list-box li{
+    margin-left: 0px; padding: 0px 10px;
+    height: 36px;
+    display: block;
+    line-height: 36px;
+}
+
+.schedule-list-box .Expired{
+    line-height: 36px;
+    list-style-type:none;
+    color: #afbac9;
+}
+
+.schedule-list-box li a{
+    width: 60%;
+    float: left;
+}
+.schedule-list-box li span{
+    width: 30%;
+    float: right;
+}
+.schedule-list-box .lf{
+    width: 75%;
+    float: left;
+}
+.schedule-list-box .rg{
+    width: 25%;
+    float: right;
+    text-align: right;
+}
+.schedule-list-box li:hover{
+    background-color: #e9ecfd;
+    border-radius: 18px;
+    display: block;
+}
+.i-schedule-list .Expired{
+    line-height: 28px;
+    list-style-type:none;
+    color: #afbac9;
+}
+
+
+
+
+.i-schedule-bd .more {
+    text-align: right;
+    border-top: #eaeef3 solid 1px;
+    margin: 0 0px;
+    line-height:42px;
+    overflow: hidden;clear: both;
+    padding: 0px 0px 4px 0px;
 }
