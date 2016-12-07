@@ -78,15 +78,15 @@
                 e = e || window.event;
                 e.target = e.target || e.srcElement;
                 if(e.target.tagName.toLowerCase() === "li"){
-                    utils.css(utils.firstChild(e.target),{
+                    utils.css(utils.lastChild(e.target),{
                         color:"grey",
-                        display:"block"
+                        display:"inline-block"
                     });
                 }
                 if(e.target.tagName.toLowerCase() === "sup"){
                     utils.css(e.target,{
                         color:"red",
-                        display:"block"
+                        display:"inline-block"
                     });
                 }
             };
@@ -97,14 +97,14 @@
                 e = e || window.event;
                 e.target = e.target || e.srcElement;
                 if(e.target.tagName.toLowerCase() === "li"){
-                    utils.css(utils.firstChild(e.target),{
+                    utils.css(utils.lastChild(e.target),{
                         display:"none"
                     });
                 }
                 if(e.target.tagName.toLowerCase() === "sup"){
                     utils.css(e.target,{
                         color:"grey",
-                        display:"block"
+                        display:"inline-block"
                     });
                 }
             };
