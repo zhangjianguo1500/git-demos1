@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="css/global.css"/>
-    <link rel="stylesheet" href="css/font2.css"/>
+    <link rel="stylesheet" href="css/font.css"/>
     <link rel="stylesheet" href="css/index.css"/>
 
 </head>
@@ -12,12 +12,12 @@
 <!--site-header Start-->
 <div class="site-header">
     <a class="logo"><img src="images/logo.png" alt=""/></a>
-    <div class="header-searchBox div2" id="con_menu_2" style="display: none"><i class="ic-i-search fi-search2"></i><input class="searchIput outline" type="text"/></div>
+    <div class="header-searchBox div2 rodal-dialog rodal-door-enter" id="con_menu_2" style="display: none;animation-duration: 300ms;"><i class="ic-i-search fi-search2"></i><input class="searchIput outline" type="text"/></div>
     <div class="user-link">
         <ul>
             <li><a id="menu1" onclick="change('menu',1)"><i class="ic-i-menu"></i></a></li>
             <!--关闭
-            <li><a href=""><i class="fi-remove"></i></a></li>
+            <li><a href=""><i class="i-menu-delete"></i></a></li>
             -->
             <li><a id="menu2" onclick="change('menu',2)"><i class="ic-i-search"></i></a></li>
             <li><a id="menu3" onclick="change('menu',3)"><i class="ic-i-add"></i></a>
@@ -44,9 +44,88 @@
         </ul>
     </div>
 </div>
-<!--菜单1 Start-->
-<div class="menu1" id="con_menu_1" class="div2" style="height:100%;display:none; ">111</div>
-<!--菜单1 End-->
+<!--主导航菜单 Start-->
+<div class="menu1" id="con_menu_1" class="div2" style="height:100%;display:none;">
+    <div class="m-box">
+        <ul>
+            <li><h2>办公管理</h2></li>
+            <li>
+                <div class="list">
+                    <h3>日常工作</h3>
+                    <div><a class="hh-radius" href="">日常工作</a></div>
+                </div>
+                <div class="list">
+                    <h3>任务管理</h3>
+                    <div><a class="hh-radius" href="">任务</a></div>
+                </div>
+                <div class="list">
+                    <h3>资源管理</h3>
+                    <div><a class="hh-radius" href="">办公用品</a><a class="hh-radius" href="">固定资产</a><a class="hh-radius" href="">车辆管理</a><a class="hh-radius" href="">会议管理</a></div>
+
+                </div>
+                <div class="list">
+                    <h3>工作流</h3>
+                    <div><a class="hh-radius" href="">部署流程</a></div>
+                </div>
+                <div class="list">
+                    <h3>报销管理</h3>
+                    <div><a class="hh-radius" href="">报销单</a></div>
+                </div>
+                <div class="list">
+                    <h3>考勤</h3>
+                    <div><a class="hh-radius" href="">考勤登记</a><a class="hh-radius" href="">考勤查询</a><a class="hh-radius" href="">考勤设置</a><a class="hh-radius" href="">考勤信息</a><a class="hh-radius" href="">请假单</a><a class="hh-radius" href="">考勤登记</a><a class="hh-radius" href="">考勤查询</a><a class="hh-radius" href="">考勤设置</a><a class="hh-radius" href="">考勤信息</a><a class="hh-radius" href="">请假单</a><a class="hh-radius" href="">考勤登记</a><a class="hh-radius" href="">考勤查询</a><a class="hh-radius" href="">考勤设置</a><a class="hh-radius" href="">考勤信息</a><a class="hh-radius" href="">请假单</a></div>
+                </div>
+                <div class="list">
+                    <h3>我的网盘</h3>
+                    <div><a class="hh-radius" href="">我的网盘</a></div>
+                </div>
+                <div class="list">
+                    <h3>公共信息</h3>
+                    <div><a class="hh-radius" href="">电子公告</a><a class="hh-radius" href="">意见箱</a><a class="hh-radius" href="">在线投票</a></div>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li><h2>基础数据</h2></li>
+            <li>
+                <div class="list">
+                    <h3>客户管理</h3>
+                    <div><a class="hh-radius" href="">客户</a><a class="hh-radius" href="">客户来源</a><a class="hh-radius" href="">客户等级</a><a class="hh-radius" href="">客户类型</a><a class="hh-radius" href="">客户联系人</a><a class="hh-radius" href="">竞争对手</a></div>
+                </div>
+                <div class="list">
+                    <h3>供应商管理</h3>
+                    <div><a class="hh-radius" href="">供应商</a><a class="hh-radius" href="">供应商联系人</a></div>
+                </div>
+                <div class="list">
+                    <h3>物流管理</h3>
+                    <div><a class="hh-radius" href="">货代公司</a><a class="hh-radius" href="">货代联系人</a><a class="hh-radius" href="">服务机构</a><a class="hh-radius" href="">服务机构联系人</a></div>
+
+                </div>
+                <div class="list">
+                    <h3>产品管理</h3>
+                    <div><a class="hh-radius" href="">规格名称</a><a class="hh-radius" href="">产品</a><a class="hh-radius" href="">包装</a><a class="hh-radius" href="">计量单位</a><a class="hh-radius" href="">测试项目</a><a class="hh-radius" href="">测试方法</a><a class="hh-radius" href="">生产工艺</a><a class="hh-radius" href="">生产标准</a><a class="hh-radius" href="">申报要素</a><a class="hh-radius" href="">材质</a><a class="hh-radius" href="">成品分类</a><a class="hh-radius" href="">产品分组</a><a class="hh-radius" href="">产品等级</a><a class="hh-radius" href="">产品类型</a><a class="hh-radius" href="">危险等级</a><a class="hh-radius" href="">成品分类</a></div>
+                </div>
+                <div class="list">
+                    <h3>人力资源</h3>
+                    <div><a class="hh-radius" href="">职员</a><a class="hh-radius" href="">职务</a><a class="hh-radius" href="">职称</a><a class="hh-radius" href="">学历</a></div>
+                </div>
+                <div class="list">
+                    <h3>财务管理</h3>
+                    <div><a class="hh-radius" href="">支付条款</a><a class="hh-radius" href="">交易条款</a><a class="hh-radius" href="">银行</a><a class="hh-radius" href="">币种</a><a class="hh-radius" href="">税类别</a></div>
+                </div>
+                <div class="list">
+                    <h3>仓储管理</h3>
+                    <div><a class="hh-radius" href="">产品状态</a><a class="hh-radius" href="">仓库</a><a class="hh-radius" href="">货架类型</a><a class="hh-radius" href="">仓储事物类型</a></div>
+                </div>
+                <div class="list">
+                    <h3>公共信息</h3>
+                    <div><a class="hh-radius" href="">电子公告</a><a class="hh-radius" href="">意见箱</a><a class="hh-radius" href="">在线投票</a></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--主导航菜单 End-->
 <!--site-header End-->
 
 
@@ -88,7 +167,7 @@
                             <span href="">USA</span>
                         </div>
                     </a>
-                    <i class="fi-move-to"></i>
+                    <span class="c-switch"><i class="ic-i-switch"></i></span>
                     <a href="javascript:void(0);" class="currency-btn select-from-currency">
                         <span class="select-inner">
                            <span class="currency-selected" data-lang="zh">CNY</span>
@@ -287,9 +366,9 @@
                 </div>
                 <div class="i-schedule-bd">
                     <div class="year">
-                         <span class="a-lf"><i class="ic-i-arrow-left"></i></span>
-                         <span class="y-m">10月 9-15日 2016</span>
-                         <span class="a-rg"><i class="ic-i-arrow--right"></i></span>
+                        <span class="a-lf"><i class="ic-i-arrow-left"></i></span>
+                        <span class="y-m">10月 9-15日 2016</span>
+                        <span class="a-rg"><i class="ic-i-arrow--right"></i></span>
                     </div>
                     <div class="week">
                         <ul class="hh-avg-sm-7 hh-thumbnails hd">
@@ -327,6 +406,7 @@
         <!--i-task End-->
     </div>
 </div>
+
 <!--tab End-->
 <script src="js/global.js"></script>
 <script src="js/utils.js"></script>
