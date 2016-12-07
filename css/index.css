@@ -325,6 +325,7 @@
 .currency-bd {padding:0 10px 10px 10px;display:block;}
 .currency-bd h2{padding:4px 10px;display:block; margin-bottom: 0px; font-weight: 100; font-size: 14px}
 .currency-bd .currency-box{padding:10px 0 0 0;display:block;}
+.currency-bd .currency-box .ic-i-switch{font-size: 20px}
 .currency-bd .t10{padding-top: 10px}
 .currency-bd .dictionary-title{color: #cdcecf}
 .currency-btn, .currency-btn-disable {
@@ -387,7 +388,9 @@
 
 
 
-
+/* header：下拉菜单
+========================================================================================= */
+/*主导航下拉*/
 .menu1 {
     position: absolute;
     z-index: 9999;
@@ -397,6 +400,74 @@
     height: 800px;
     background-color:rgba(255,255,255,0.9);
 }
+.menu1 .m-box{
+    width: 96%;
+    margin: auto;
+    padding: 10px 0px;
+}
+.menu1 .m-box ul{
+    width: 96%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.menu1 .m-box h2{
+    font-size: 16px;
+    display: block;
+    color: #6751ed;
+    float: left;
+}
+.menu1 .m-box li{
+    float:left;
+    padding-right:50px;
+}
+.menu1 .m-box .list{
+    width: 100%;
+    clear: both;
+    display: block;
+    float:left;
+    height:auto;
+}
+
+.menu1 .m-box .list h3{
+    display: block;
+    width:100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #6751ed;
+    float: left;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.menu1 .m-box .list div{
+    width:800px;
+    line-height: 30px;
+    color: #6751ed;
+    float: left;
+}
+.menu1 .m-box .list li{
+    width: 100%;
+    font-size: 14px;
+    color: #6751ed;
+    float: left;
+}
+
+.menu1 .m-box .list a{
+    padding: 0 10px;
+    display: block;
+    width: 100px;
+    line-height: 30px;
+    color: #8c949b;
+    float: left;
+}
+.menu1 .m-box .list a:hover{
+    display: block;
+    background-color: #49a8f3;
+    color: #fff;
+}
+
+
 .menu2 {
     position: absolute;
     z-index: 10000;
