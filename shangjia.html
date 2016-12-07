@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/font.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+
+</head>
+<body>
+<!--site-header Start-->
+<div class="site-header">
+    <a class="logo"><img src="images/logo.png" alt=""/></a>
+    <div class="header-searchBox"><i class="fi-search fi-search2"></i><input class="searchIput outline" type="text"/></div>
+    <div class="user-link">
+        <ul>
+            <li><a href=""><i class="fi-list"></i></a></li>
+            <!--关闭
+            <li><a href=""><i class="fi-remove"></i></a></li>
+            -->
+            <li><a href=""><i class="fi-search"></i></a>
+                <!--菜单2 Start-->
+                <div class="menu2" style="display: none">22</div>
+                <!--菜单2 End-->
+            </li>
+            <li><a href=""><i class="fi-more"></i></a>
+                <!--菜单2 Start-->
+                <div class="menu2" style="display: none">22</div>
+                <!--菜单2 End-->
+            </li>
+            <li><a href=""><i class="fi-remind"></i> </a><sub style="color: #fff">6</sub>
+                <!--菜单3 Start-->
+                <div class="menu2" style="display: none">33</div>
+                <!--菜单3 End-->
+            </li>
+            <li><a href=""><i class="fi-mail"></i> </a><sub>10</sub>
+                <!--菜单4 Start-->
+                <div class="menu2"  style="display: none">44</div>
+                <!--菜单4 End-->
+            </li>
+            <li><a href=""><i class="fi-user"></i> </a>
+                <!--菜单5 Start-->
+                <div class="menu2">55</div>
+                <!--菜单5 End-->
+            </li>
+            <li><a href=""><i class="fi-user"></i> </a></li>
+        </ul>
+
+    </div>
+</div>
+<!--菜单1 Start-->
+<div class="menu1" style="display: none">111</div>
+<!--菜单1 End-->
+<!--site-header End-->
+
+
+<!--tab Start-->
+<div class="box">
+    <div class="home-i"><i class="fi-home"></i></div>
+    <ul>
+        <li>客户1<sup>X</sup></li>
+        <li>客户详情信息<sup>X</sup></li>
+    </ul>
+    <div class="tab-page">
+        11
+        <div style="background-color:grey;">这是一个内嵌Div</div>
+        <ul>
+            <li>test1</li>
+            <li>test2</li>
+        </ul>
+    </div>
+    <div class="tab-page">内容二</div>
+</div>
+
+<!--tab End-->
+<script src="js/global.js"></script>
+<script src="js/utils.js"></script>
+<script type="text/javascript">
+    var boxList = utils.getElementsByClass("box");
+    var box1 = new Tab(boxList[0], 0);
+</script>
+
+</body>
+</html>

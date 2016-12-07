@@ -12,36 +12,32 @@
 <!--site-header Start-->
 <div class="site-header">
     <a class="logo"><img src="images/logo.png" alt=""/></a>
-    <div class="header-searchBox"><i class="ic-i-search fi-search2"></i><input class="searchIput outline" type="text"/></div>
+    <div class="header-searchBox div2" id="con_menu_2" style="display: none"><i class="ic-i-search fi-search2"></i><input class="searchIput outline" type="text"/></div>
     <div class="user-link">
         <ul>
-            <li><a href=""><i class="ic-i-menu"></i></a></li>
+            <li><a id="menu1" onclick="change('menu',1)"><i class="ic-i-menu"></i></a></li>
             <!--关闭
             <li><a href=""><i class="fi-remove"></i></a></li>
             -->
-            <li><a href=""><i class="ic-i-search"></i></a>
-                <!--菜单2 Start-->
-                <div class="menu2" style="display: none">22</div>
-                <!--菜单2 End-->
-            </li>
-            <li><a href=""><i class="ic-i-add"></i></a>
-                <!--菜单2 Start-->
-                <div class="menu2" style="display: none">22</div>
-                <!--菜单2 End-->
-            </li>
-            <li><a href=""><i class="ic-i-message"></i> </a><sub style="color: #fff">6</sub>
+            <li><a id="menu2" onclick="change('menu',2)"><i class="ic-i-search"></i></a></li>
+            <li><a id="menu3" onclick="change('menu',3)"><i class="ic-i-add"></i></a>
                 <!--菜单3 Start-->
-                <div class="menu2" style="display: none">33</div>
+                <div class="menu2" id="con_menu_3" style="display:none; ">33</div>
                 <!--菜单3 End-->
             </li>
-            <li><a href=""><i class="ic-i-email"></i> </a><sub>10</sub>
+            <li><a id="menu4" onclick="change('menu',4)"><i class="ic-i-message"></i> </a><sub style="color: #fff">6</sub>
+                <!--菜单3 Start-->
+                <div class="menu2" id="con_menu_4" style="display:none; ">33</div>
+                <!--菜单3 End-->
+            </li>
+            <li><a id="menu5" onclick="change('menu',5)"><i class="ic-i-email"></i> </a><sub>10</sub>
                 <!--菜单4 Start-->
-                <div class="menu2"  style="display: none">44</div>
+                <div class="menu2" id="con_menu_5" style="display: none">44</div>
                 <!--菜单4 End-->
             </li>
-            <li><a href=""><i class="ic-i-user"></i> </a>
+            <li><a id="menu6" onclick="change('menu',6)"><i class="ic-i-user"></i> </a>
                 <!--菜单5 Start-->
-                <div class="menu2" style="display: none">55</div>
+                <div class="menu2" id="con_menu_6" style="display: none">55</div>
                 <!--菜单5 End-->
             </li>
             <li><a href=""><i class="ic-i-help"></i> </a></li>
@@ -49,7 +45,7 @@
     </div>
 </div>
 <!--菜单1 Start-->
-<div class="menu1" style="display: none">111</div>
+<div class="menu1" id="con_menu_1" class="div2" style="height:100%;display:none; ">111</div>
 <!--菜单1 End-->
 <!--site-header End-->
 
@@ -226,41 +222,41 @@
                         <table class="hh-table hh-table-hover i-task-table">
                             <thead>
                             <tr>
-                                <th>流程定义ID</th>
-                                <th>任务名称</th>
-                                <th>操作</th>
+                                <th class="a1">流程定义ID</th>
+                                <th class="a2">任务名称</th>
+                                <th class="a3">操作</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <td class="i-taskboder">1504</td>
-                                <td class="i-taskboder">报销申请</td>
-                                <td class="i-taskboder"><a href="">办理任务</a></td>
+                                <td class="a1">1504</td>
+                                <td class="a2">报销申请</td>
+                                <td class="a3"><a href="">办理任务</a></td>
                             </tr>
                             <tr>
-                                <td class="i-taskboder">1504</td>
-                                <td class="i-taskboder">报销申请</td>
-                                <td class="i-taskboder"><a href="">办理任务</a></td>
+                                <td class="a1">1504</td>
+                                <td class="a2">报销申请</td>
+                                <td class="a3"><a href="">办理任务</a></td>
                             </tr>
                             <tr>
-                                <td class="i-taskboder">1504</td>
-                                <td class="i-taskboder">报销申请</td>
-                                <td class="i-taskboder"><a href="">办理任务</a></td>
+                                <td class="a1">1504</td>
+                                <td class="a2">报销申请</td>
+                                <td class="a3"><a href="">办理任务</a></td>
                             </tr>
                             <tr>
-                                <td class="i-taskboder">1504</td>
-                                <td class="i-taskboder">报销申请</td>
-                                <td class="i-taskboder"><a href="">办理任务</a></td>
+                                <td class="a1">1504</td>
+                                <td class="a2">报销申请</td>
+                                <td class="a3"><a href="">办理任务</a></td>
                             </tr>
                             <tr>
-                                <td class="i-taskboder">1504</td>
-                                <td class="i-taskboder">报销申请</td>
-                                <td class="i-taskboder"><a href="">办理任务</a></td>
+                                <td class="a1">1504</td>
+                                <td class="a2">报销申请</td>
+                                <td class="a3"><a href="">办理任务</a></td>
                             </tr>
                             <tr>
-                                <td class="i-taskboder">1504</td>
-                                <td class="i-taskboder">报销申请</td>
-                                <td class="i-taskboder"><a href="">办理任务</a></td>
+                                <td class="a1">1504</td>
+                                <td class="a2">报销申请</td>
+                                <td class="a3"><a href="">办理任务</a></td>
                             </tr>
 
                             </tbody>
@@ -315,13 +311,13 @@
                             <li>15</li>
                         </ul>
                     </div>
-                    <div class="i-schedule-list">
-                        <div class="Expired"><span class="lf">● 总理点赞的赣南脐橙已被抢购一空</span><span class="rg">09:00-10:00</span></div>
-                        <div class="Expired"><span class="lf">● 总理点赞的赣南脐橙已被抢购一空</span><span class="rg">10:00-12:00</span></div>
-                        <div class="not-Expired E-hover"><span class="lf">● 总理点赞的赣南脐橙已被抢购一空</span><span class="rg">13:00-14:00</span></div>
-                        <div class="not-Expired"><span class="lf">● 总理点赞的赣南脐橙已被抢购一空</span><span class="rg">15:00-16:00</span></div>
-                        <div class="not-Expired"><span class="lf">● 总理点赞的赣南脐橙已被抢购一空</span><span class="rg">17:00-18:00</span></div>
-                        <div class="not-Expired"><span class="lf">● 总理点赞的赣南脐橙已被抢购一空</span><span class="rg">19:00-20:00</span></div>
+                    <div class="schedule-list-box">
+                        <li class="Expired"><span class="box_space lf" href="">● 总理点赞的赣南脐橙已被抢购一空</span><span class="rg">09:00-10:00</span></li>
+                        <li class="Expired"><span class="box_space lf" href="">● 总理点赞的赣南脐橙已被抢购一空</span><span class="rg">10:00-12:00</span></li>
+                        <li><span class="box_space lf" href="">● 总理点赞的赣南脐橙已被抢购一空</span><span class="rg">13:00-14:00</span></li>
+                        <li><span class="box_space lf" href="">● 总理点赞的赣南脐橙已被抢购一空</span><span class="rg">15:00-16:00</span></li>
+                        <li><span class="box_space lf" href="">● 总理点赞的赣南脐橙已被抢购一空</span><span class="rg">17:00-18:00</span></li>
+                        <li><span class="box_space lf" href="">● 总理点赞的赣南脐橙已被抢购一空</span><span class="rg">19:00-20:00</span></li>
                     </div>
                     <div class="more"><a href="">更多<i class="ic-i-arrow-more"></i></a></div>
                 </div>
