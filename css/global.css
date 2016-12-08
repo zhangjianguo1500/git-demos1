@@ -750,7 +750,7 @@ th {
 .user-link{width: 350px; margin-top: 2px; float: right}
 .user-link ul li{float:left;width:46px;font-size:30px;}
 .user-link ul li a{color: #fff}
-.user-link ul li sub{width:18px;height:18px; line-height: 16px; font-size: 10px; text-align: center; color: #ffffff; top:0px; display:block; background-color: #f21211; border-radius: 10px; margin-left:22px; margin-top:4px;position: absolute}
+.user-link ul li sub{width:18px;height:18px; line-height: 16px; font-size:8px; text-align: center; color: #ffffff; top:0px; display:block; background-color: #f21211; border-radius: 10px; margin-left:18px; margin-top:4px;position: absolute}
 
 /*下拉菜单*/
 .header-menu{width: 100%;padding:0 50px;-webkit-backface-visibility: hidden;background: rgba(254, 254, 254, 0.9);box-shadow: 0 6px 12px rgba(0,0,0,.175);position: absolute; z-index: 999}
@@ -2387,7 +2387,8 @@ fieldset[disabled] .hh-checkbox-inline {
 .hvr-grow {transition-duration: 0.3s;}
 .hvr-grow:hover,
 .hvr-grow:focus,
-.hvr-grow:active {-webkit-transform:translateY(-5px);-moz-transform:translateY(-5px);-ms-transform:translateY(-5px);  -o-transform:translateY(-5px);transform:translateY(-5px)  }
+/*.hvr-grow:active {transform:translateY(-5px);-ms-transform:translateY(-5px);-webkit-transform:translateY(-5px); }*/
+.hvr-grow:active {transform:translateY(-5px);-ms-transform:translateY(-5px);-webkit-transform:translateY(-5px); }
 
 /* -- door -- */
 .rodal-dialog {
