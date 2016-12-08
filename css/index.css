@@ -372,20 +372,56 @@
 
 .translate-currency {
     position: absolute;
-    width: 96px;
-    margin-top: -5px;
+    width: 360PX;
+    margin-top: 2px;
     margin-left: -1px;
-    border-radius: 0px 0px 6px 6px;
+    border-radius:6px;
     z-index: 1000;
     background-color: #fff;
     float: left;
     padding: 0px 0px;
     border: 1px solid #dedede;
-    border-top: none;
 }
 .translate-currency span {display: block; padding-left: 28px; text-align: left; line-height: 20px }
 .translate-currency span:hover {background-color: #e9eaeb }
+.i-ctab1{width:100%;padding:0; margin:0;}
+.i-ctab1>ul{
+    top: 1px;
+    overflow: hidden;
+    height:42px;
+    padding: 0px 0px 0 0px;
+    margin: 0 10px;
+    border-bottom: solid 1px #eaeef3;
+    /*overflow: hidden;/!*清除子元素的浮动对父级元素的影响*!/*/
+}
 
+.i-ctab1>ul li{
+    float: left;
+    margin-right: 8px;
+    padding: 0 6px;
+    height:41px;
+    line-height:41px;
+    font-size: 15px;
+    text-align: center;
+    color: #b5c0cd;
+    cursor: pointer;
+}
+.i-ctab1>ul li.select{
+    background: #fff;
+    color: #4125e8;
+    border-bottom: solid 1px #634eeb;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.i-ctab1 .tab-page{
+    display: none;
+    width: 100%;
+    text-align: center;
+    clear: both;/*清除哥哥元素的浮动对弟弟的影响*/
+}
+.i-ctab1 .tab-page.select {
+    display: block;
+}
 
 
 /* header：下拉菜单
@@ -609,6 +645,8 @@
     line-height:42px;
     padding: 0px 0px 4px 0px;
 }
+
+
 /*index task*/
 
 
