@@ -24,6 +24,45 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ic-change-password:before {
+  content: "\e910";
+}
+.ic-information:before {
+  content: "\e911";
+}
+.ic-Sign-out:before {
+  content: "\e912";
+}
+.ic-arrow_more_16:before {
+  content: "\e913";
+}
+.ic-activity:before {
+  content: "\e914";
+}
+.ic-information2:before {
+  content: "\e915";
+}
+.ic-mail:before {
+  content: "\e916";
+}
+.ic-notice:before {
+  content: "\e917";
+}
+.ic-task:before {
+  content: "\e918";
+}
+.ic-clear .path1:before {
+  content: "\e919";
+  color: rgb(216, 216, 216);
+}
+.ic-clear .path2:before {
+  content: "\e91a";
+  margin-left: -1em;
+  color: rgb(159, 172, 189);
+}
+.ic-search:before {
+  content: "\e91b";
+}
 .ic-i-menu-delete:before {
   content: "\e90f";
 }
@@ -72,4 +111,3 @@ i {
 .ic-i-write-mails:before {
   content: "\e90e";
 }
-
