@@ -1,0 +1,159 @@
+---
+date: 2016-11-29 19:44
+status: public
+title: 开发指导
+---
+
+# 技术栈结构
+- react
+- react-route
+- redux
+- redux-react
+- react-uicomponents(包括dialog,slider,select等)
+# 组件结构
+系统业务开发中，一个系统组件，由以下几个部分组成。
+- action
+记录用户行为数据（也有服务器ktyi响应的数据）的载体(对象),他和普通JS对象唯一不同,一定要有一个type字段来告诉redux我们的ation类型。
+ - action object
+ - action creator
+- reducer
+指明如何更新state. 在redux中，所有的state都被保存在一个单一对象中。所以写代码前一定要规划好state的结构。  
+- container
+用来连接component和store    
+- components
+用来展示信息的组件
+- router
+管理系统内所有资源，包括路由配置，异步资源分隔等
+# 执行结构图
+
+![](_image/c.jpg)
+# 三大原则
+- 单一数据源
+- state只读
+- 使用纯函数来执行
+# Action说明
+Action 是把数据从应用传到 store 的有效载荷。它是 store 数据的唯一来源。一般来说你会通过 store.dispatch() 将 action 传到 store。
+## action
+
+``````
+    {
+        type:'CHANGELANGUAGE',
+        currentLang:lang
+    }
+``````
+
+## action 创建
+
+``````
+export default function setLanguage(lang) {
+    return export default function setLanguage(lang) {
+    return {
+        type:'CHANGELANGUAGE',
+        currentLang:lang
+    }
+}
+}
+``````
+
+# reducer
+
+``````
+const initialState = {
+  languages: [],
+  currentLang:window.localStorage.getItem('currentLang')===null?'cn':window.localStorage.getItem('currentLang')
+}
+
+export default function languages(state = initialState, action){
+	
+	switch (action.type) {
+    case 'CHANGELANGUAGE':
+    	debugger;
+    	const{currentLang} =action;
+    	return {...state,currentLang};
+    	break;
+    default:
+      return state
+  }
+}
+``````
+# components
+
+``````
+import React,{Component,PropTypes} from 'react';
+
+export default class SwitchLanguage extends Component{
+	constructor(props){
+		super(props);		
+	}
+	render(){
+		return (<div>
+			<select onChange={(e)=>this.props.onLanguageChange(e.target.value)} value={this.props.currentLang}>
+				<option value='cn'>中文-简体</option>
+				<option value='ct'>中文-繁體</option>
+				<option value='en'>English</option>
+			</select>
+		</div>);
+	}
+ }
+
+SwitchLanguage.PropTypes={
+	onLanguageChange:PropTypes.func.isRequired,
+	currentLang		:PropTypes.string.isRequired,
+}
+``````
+# container
+
+``````
+import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux';
+import { loadTranslations, setLocale, syncTranslationWithStore, i18nReducer } from 'react-redux-i18n';
+import { setTranslations } from '../../actions/loc';
+import SwitchLanguage from '../../components/loc/SwitchLanguage';
+import AwesomeComponent from '../../components/loc/AwesomeComponent';
+
+
+const mapStateToProps=(state)=>{  
+    //let currentLang window.localStorage.get('currentLang')??window.localStorage.get('currentLang'):'cn'
+    const {languages}=state;
+    console.log(languages);     
+    return {currentLang:languages.currentLang};
+}
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+    return {
+        actions: {
+            setLocale: (lang) => {
+                debugger;
+                console.log(lang);
+                return dispatch(setTranslations(lang));
+            }
+        }
+    }
+}
+
+const divStyle={
+    color:'white',
+    padding:'8px',
+}
+
+/*@connect(null, mapDispatchToProps)*/
+export class SwitchContainer extends Component {
+
+    render(){
+    const { actions } = this.props;
+    return ( 
+        <div style={divStyle}>
+        <SwitchLanguage onLanguageChange = { actions.setLocale } currentLang={this.props.currentLang}></SwitchLanguage>
+        <br/>
+        <br/>
+        <AwesomeComponent />
+        </div>
+    );
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(SwitchContainer);
+``````
+# router
+
+- 配置
+- 创建方法
