@@ -1,0 +1,20 @@
+<MKM version="2.0" imageFileUrl="file:///Users/wz/Desktop/Label/%E9%A6%96%E9%A1%B5_%E5%BC%B9%E5%87%BA%E9%A1%B5/home%20page%2007.png">
+  <Marks>
+    <LengthMark direction="12" color="16711680" length="414" x="858" y="276"/>
+    <LengthMark direction="3" color="16711680" length="230" x="848" y="40"/>
+    <LengthMark direction="3" color="16711680" length="80" x="960" y="80"/>
+    <LengthMark direction="12" color="16711680" length="80" x="960" y="79"/>
+    <LengthMark direction="3" color="16711680" length="30" x="1147" y="40"/>
+    <LengthMark direction="3" color="16711680" length="30" x="1147" y="240"/>
+    <LengthMark direction="12" color="16711680" length="1" x="1147" y="90"/>
+    <LengthMark direction="12" color="16711680" length="124" x="1148" y="233"/>
+    <LengthMark direction="12" color="16711680" length="289" x="857" y="233"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="873" y="63" textMaxWidth="214" offsetX="25" offsetY="10" text="此模块分左右两部分 分别为各自部分上下左右居中"/>
+    <LengthMark direction="3" color="16711680" length="12" x="1080" y="160"/>
+    <LengthMark direction="3" color="16711680" length="10" x="1080" y="186"/>
+    <LengthMark direction="3" color="16711680" length="4" x="1080" y="214"/>
+    <LengthMark direction="3" color="16711680" length="12" x="1256" y="133"/>
+    <LengthMark direction="3" color="16711680" length="12" x="1256" y="166"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="1171" y="115" textMaxWidth="143" offsetX="43" offsetY="26" text="鼠标经过&#xD;Icon、文字变色#4125E8&#xD;不出现底色"/>
+  </Marks>
+</MKM>

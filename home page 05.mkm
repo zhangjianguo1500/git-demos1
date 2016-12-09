@@ -1,0 +1,12 @@
+<MKM version="2.0" imageFileUrl="file:///Users/wz/Desktop/home%20page%2005.png">
+  <Marks>
+    <LengthMark direction="12" color="16711680" length="106" x="1046" y="214"/>
+    <LengthMark direction="3" color="16711680" length="180" x="1043" y="32"/>
+    <LengthMark direction="3" color="16711680" length="32" x="1043" y="0"/>
+    <LengthMark direction="12" color="16711680" length="20" x="1131.75" y="171"/>
+    <LengthMark direction="12" color="16711680" length="20" x="1046" y="171"/>
+    <LengthMark direction="12" color="16711680" length="16" x="1066" y="171"/>
+    <LengthMark direction="3" color="16711680" length="32" x="1056" y="45"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="1127" y="62" textMaxWidth="120" offsetX="37" offsetY="25" text="#4125E8 鼠标经过&#xD;Icon 文字变色高亮 &#xD;底色 #EDEFFF "/>
+  </Marks>
+</MKM>

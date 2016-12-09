@@ -1,0 +1,7 @@
+<MKM version="2.0" imageFileUrl="file:///Users/wz/Desktop/home%20page%2004.png">
+  <Marks>
+    <LengthMark direction="3" color="16711680" length="28" x="1003" y="8"/>
+    <LengthMark direction="12" color="16711680" length="180" x="856" y="39"/>
+    <TextMark defaultDirection="10" direction="10" color="16711680" x="1008" y="28" textMaxWidth="307" offsetX="33" offsetY="18" text="1.除“menu”Icon以外，鼠标经过“搜索”“添加”“消息”等Icon时均有鼠标经过事件，变颜色即可，#4125E8。点击以后，恢复成白色。&#xD;&#xD;2.点击“搜索”Icon，以“搜索”图标为原点，从右往左展开搜索框。&#xD;&#xD;3.开始输入后光标 “搜索”图标为蓝色 输入完成后点击“搜索”图标或“回车”均可以确认搜索。&#xD;默认#9FACBD   开启后#4125E8&#xD;&#xD;4.输入文字前 光标后为灰色“搜索...”，色值#9FACBD&#xD;&#xD;5.输入文案后，搜索框右侧“清除”Icon出现，方便清除错误输入。"/>
+  </Marks>
+</MKM>

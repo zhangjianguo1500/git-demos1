@@ -1,0 +1,20 @@
+<MKM version="2.0" imageFileUrl="file:///Users/wz/Desktop/home%20page%2006.png">
+  <Marks>
+    <LengthMark direction="12" color="16711680" length="218" x="946" y="298"/>
+    <LengthMark direction="3" color="16711680" length="266" x="1169" y="32"/>
+    <LengthMark direction="3" color="16711680" length="32" x="1169" y="0"/>
+    <LengthMark direction="3" color="16711680" length="32" x="1146" y="40"/>
+    <LengthMark direction="3" color="16711680" length="1" x="1125" y="72"/>
+    <LengthMark direction="3" color="16711680" length="32" x="971" y="267"/>
+    <LengthMark direction="12" color="16711680" length="10" x="946" y="265"/>
+    <LengthMark direction="12" color="16711680" length="10" x="1154" y="265"/>
+    <LengthMark direction="3" color="16711680" length="32" x="949" y="105"/>
+    <TextMark defaultDirection="5" direction="5" color="16711680" x="962" y="59" textMaxWidth="100" offsetX="57" offsetY="31" text="#4125E8 16px"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="980" y="58" textMaxWidth="100" offsetX="47" offsetY="10" text="#9FACBD 12px"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="980" y="82" textMaxWidth="100" offsetX="25" offsetY="10" text="#9FACBD 14px"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="982" y="114" textMaxWidth="100" offsetX="25" offsetY="10" text="#4125E8 14px"/>
+    <TextMark defaultDirection="6" direction="6" color="16711680" x="1131" y="289" textMaxWidth="100" offsetX="40" offsetY="22" text="#9FACBD 12px"/>
+    <LengthMark direction="3" color="16711680" length="1" x="1009" y="265"/>
+    <TextMark defaultDirection="10" direction="10" color="16711680" x="1079" y="263" textMaxWidth="100" offsetX="72" offsetY="48" text="#E9EDF2"/>
+  </Marks>
+</MKM>
